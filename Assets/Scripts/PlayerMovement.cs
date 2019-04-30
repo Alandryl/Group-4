@@ -24,7 +24,6 @@ public class PlayerMovement : MonoBehaviour
 
 
 
-
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -41,9 +40,29 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate()
     {
 
+
+        //Walking
+
+        float move = Input.GetAxis("Horizontal");
+        ac.SetFloat("Speed", Mathf.Abs(move));
+
+        rb.velocity = new Vector3(move * runSpeed, rb.velocity.y, 0);
+
+
+        //Character Friction
+
+        if (grounded && move == 0f)
+        {
+            GetComponent<Collider>().material.staticFriction = 2;
+        }
+        else
+        {
+            GetComponent<Collider>().material.staticFriction = 0;
+        }
+
         //Jumping
 
-        if(grounded && Input.GetAxis("Jump") > 0)
+        if (grounded && Input.GetAxis("Jump") > 0)
         {
             grounded = false;
             ac.SetBool("Grounded", grounded);
@@ -66,16 +85,6 @@ public class PlayerMovement : MonoBehaviour
 
         ac.SetBool("Grounded", grounded);
 
-        //Walking
-
-        float move = Input.GetAxis("Horizontal");
-        ac.SetFloat("Speed", Mathf.Abs(move));
-
-        rb.velocity = new Vector3(move * runSpeed, rb.velocity.y, 0);
-
-        //Jumping
-
-
 
         //Flip
 
@@ -87,6 +96,13 @@ public class PlayerMovement : MonoBehaviour
         {
             Flip();
         }
+
+
+        //Sliding
+
+
+
+
     }
 
     void Flip()
