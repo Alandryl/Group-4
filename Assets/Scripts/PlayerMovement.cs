@@ -50,6 +50,8 @@ public class PlayerMovement : MonoBehaviour
             rb.AddForce(new Vector3(0, jumpHeight, 0));
         }
 
+        ac.SetFloat("verticalSpeed", rb.velocity.y);
+
         //Grounded
 
         groundCollisions = Physics.OverlapSphere(groundCheck.position, groundCheckRadius, groundLayer);
