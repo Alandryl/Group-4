@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
 
-
+    AudioSource audioSource;
     Rigidbody rb;
     Animator ac;
     public GameObject model;
@@ -16,9 +16,11 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Movement")]
 
-    public float runSpeed;
+    public float runSpeed = 4;
     bool facingRight;
-    public float jumpHeight;
+    public float jumpHeight = 500;
+    public float jumpCooldown = 0.1f;
+    float jumpCooldownCounter = 0;
 
     [Header("Ground Check")]
     public float maxRayDistance = 0.1f;
@@ -28,12 +30,17 @@ public class PlayerMovement : MonoBehaviour
     public Transform groundCheck;
     Collider[] groundCollisions;
     float groundCheckRadius = 0.2f;
-    
+
+
+    [Header("Audio")]
+    public AudioClip audioJump;
+
 
     //public float slopeSlidingForce = 100;
 
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         rb = GetComponent<Rigidbody>();
         ac = model.GetComponent<Animator>();
 
@@ -79,14 +86,21 @@ public class PlayerMovement : MonoBehaviour
             grounded = false;
             ac.SetBool("Grounded", grounded);
             rb.AddForce(new Vector3(0, jumpHeight, 0));
+            audioSource.PlayOneShot(audioJump);
+            jumpCooldownCounter = jumpCooldown;
         }
 
         ac.SetFloat("verticalSpeed", rb.velocity.y);
 
+        if (jumpCooldownCounter > 0)
+        {
+            jumpCooldownCounter -= Time.deltaTime;
+        }
+
         //Grounded
 
         groundCollisions = Physics.OverlapSphere(groundCheck.position, groundCheckRadius, groundLayer);
-        if (groundCollisions.Length > 0)
+        if (groundCollisions.Length > 0 && jumpCooldownCounter <= 0f)
         {
             grounded = true;
         }
@@ -94,6 +108,9 @@ public class PlayerMovement : MonoBehaviour
         {
             grounded = false;
         }
+
+
+
 
         ac.SetBool("Grounded", grounded);
 
