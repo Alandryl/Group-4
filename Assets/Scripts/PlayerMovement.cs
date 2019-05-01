@@ -4,25 +4,33 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public GameObject model;
 
-    public float runSpeed;
-
-
-    bool facingRight;
 
     Rigidbody rb;
     Animator ac;
+    public GameObject model;
 
-    //Jumping
     bool grounded = false;
-    Collider[] groundCollisions;
-    float groundCheckRadius = 0.2f;
-    public LayerMask groundLayer;
-    public Transform groundCheck;
+    bool standingOnSlopeLeft;
+    bool standingOnSlopeRight;
+
+    [Header("Movement")]
+
+    public float runSpeed;
+    bool facingRight;
     public float jumpHeight;
 
+    [Header("Ground Check")]
+    public float maxRayDistance = 0.1f;
+    [Range(0f, 1f)]
+    public float slopeTiltLimit = 0.75f;
+    public LayerMask groundLayer;
+    public Transform groundCheck;
+    Collider[] groundCollisions;
+    float groundCheckRadius = 0.2f;
+    
 
+    //public float slopeSlidingForce = 100;
 
     void Start()
     {
@@ -44,10 +52,14 @@ public class PlayerMovement : MonoBehaviour
         //Walking
 
         float move = Input.GetAxis("Horizontal");
+
+        if ((facingRight && !standingOnSlopeRight) ||
+           (!facingRight && !standingOnSlopeLeft))
+        {
+            rb.velocity = new Vector3(move * runSpeed, rb.velocity.y, 0);
+        }
+
         ac.SetFloat("Speed", Mathf.Abs(move));
-
-        rb.velocity = new Vector3(move * runSpeed, rb.velocity.y, 0);
-
 
         //Character Friction
 
@@ -100,8 +112,48 @@ public class PlayerMovement : MonoBehaviour
 
         //Sliding
 
+        GetAlignment();
+
+        if (standingOnSlopeLeft == true || standingOnSlopeRight == true)
+        {
+            //rb.AddForce(new Vector3(0, -slopeSlidingForce, 0));
+        }
+    }
+
+    void GetAlignment()
+    {
+        RaycastHit hitFront;
+        RaycastHit hitMiddle;
+        RaycastHit hitBack;
+
+        Physics.Raycast(transform.position + new Vector3(0.3f, 0.5f, 0), -transform.up, out hitFront, maxRayDistance);
+        Physics.Raycast(transform.position + new Vector3(0, 0.5f, 0), -transform.up, out hitMiddle, maxRayDistance);
+        Physics.Raycast(transform.position + new Vector3(-0.3f, 0.5f, 0), -transform.up, out hitBack, maxRayDistance);
+
+        Vector3 upFront = hitFront.normal;
+        Vector3 upMiddle = hitMiddle.normal;
+        Vector3 upBack = hitBack.normal;
+
+        //Debug.Log(hitMiddle.normal);
 
 
+        if (upFront.x >= slopeTiltLimit || upMiddle.x >= slopeTiltLimit || upBack.x >= slopeTiltLimit)
+        {
+            standingOnSlopeLeft = true;
+        }
+        else
+        {
+            standingOnSlopeLeft = false;
+        }
+
+        if (upFront.x <= -slopeTiltLimit || upMiddle.x <= -slopeTiltLimit || upBack.x <= -slopeTiltLimit)
+        {
+            standingOnSlopeRight = true;
+        }
+        else
+        {
+            standingOnSlopeRight = false;
+        }
 
     }
 
