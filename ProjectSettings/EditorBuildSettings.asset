@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: fb1072b741fe05d4497838609932d5be
+  - enabled: 1
+    path: Assets/Staging/Christian/Christian Test Scene.unity
+    guid: d96704eb14181724c904b7b6d6f2ef13
   m_configObjects: {}

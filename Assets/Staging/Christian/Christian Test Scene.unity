@@ -1292,7 +1292,7 @@ MonoBehaviour:
   smoothing: 5
   offset: {x: 0, y: 2, z: -8}
   camPositionClamp: 3
-  moveOffsetValue: 0
+  moveOffsetValue: 1
 --- !u!1 &1543981767
 GameObject:
   m_ObjectHideFlags: 0
