@@ -10,16 +10,17 @@ public class PlayerMovement : MonoBehaviour
     Animator ac;
     public GameObject model;
 
-    bool grounded = false;
+    public bool grounded = false;
     bool standingOnSlopeLeft;
     bool standingOnSlopeRight;
+    public bool canDoubleJump;
 
     [Header("Movement")]
 
     public float runSpeed = 4;
     bool facingRight;
     public float jumpHeight = 500;
-    public float jumpCooldown = 0.1f;
+    public float jumpCooldown = 0.3f;
     float jumpCooldownCounter = 0;
 
     [Header("Ground Check")]
@@ -32,8 +33,20 @@ public class PlayerMovement : MonoBehaviour
     float groundCheckRadius = 0.2f;
 
 
+
+    [Header("Dash")]
+    public float dashSpeed = 15;
+    public float dashTime = 0.25f;
+    float dashCounter;
+    bool dashReady;
+    public bool isDashing;
+    public GameObject dashEffect;
+
+
+
     [Header("Audio")]
     public AudioClip audioJump;
+    public AudioClip audioDash;
 
 
     //public float slopeSlidingForce = 100;
@@ -60,8 +73,8 @@ public class PlayerMovement : MonoBehaviour
 
         float move = Input.GetAxis("Horizontal");
 
-        if ((facingRight && !standingOnSlopeRight) ||
-           (!facingRight && !standingOnSlopeLeft))
+        if ((facingRight && !standingOnSlopeRight && !isDashing) ||
+           (!facingRight && !standingOnSlopeLeft && !isDashing))
         {
             rb.velocity = new Vector3(move * runSpeed, rb.velocity.y, 0);
         }
@@ -81,13 +94,27 @@ public class PlayerMovement : MonoBehaviour
 
         //Jumping
 
-        if (grounded && Input.GetAxis("Jump") > 0)
+        if (Input.GetButtonDown("Jump"))
         {
-            grounded = false;
-            ac.SetBool("Grounded", grounded);
-            rb.AddForce(new Vector3(0, jumpHeight, 0));
-            audioSource.PlayOneShot(audioJump);
-            jumpCooldownCounter = jumpCooldown;
+            if (grounded && jumpCooldownCounter <= 0f)
+            {
+                grounded = false;
+                ac.SetBool("Grounded", grounded);
+                rb.AddForce(new Vector3(0, jumpHeight, 0));
+                audioSource.PlayOneShot(audioJump);
+                jumpCooldownCounter = jumpCooldown;
+            }
+
+            if (canDoubleJump && !grounded && jumpCooldownCounter <= 0f)
+            {
+                grounded = false;
+                rb.velocity = Vector3.zero;
+                rb.AddForce(new Vector3(0, jumpHeight, 0));
+                audioSource.PlayOneShot(audioJump);
+                jumpCooldownCounter = jumpCooldown;
+                canDoubleJump = false;
+            }
+
         }
 
         ac.SetFloat("verticalSpeed", rb.velocity.y);
@@ -97,12 +124,16 @@ public class PlayerMovement : MonoBehaviour
             jumpCooldownCounter -= Time.deltaTime;
         }
 
+        //Jumping
+
+
         //Grounded
 
         groundCollisions = Physics.OverlapSphere(groundCheck.position, groundCheckRadius, groundLayer);
         if (groundCollisions.Length > 0 && jumpCooldownCounter <= 0f)
         {
             grounded = true;
+            canDoubleJump = true;
         }
         else
         {
@@ -135,9 +166,53 @@ public class PlayerMovement : MonoBehaviour
         {
             //rb.AddForce(new Vector3(0, -slopeSlidingForce, 0));
         }
+
+        //Dash
+
+        if (grounded)
+        {
+            dashReady = true;
+        }
+        if (Input.GetButtonDown("Ability1") && grounded == false && dashReady)
+        {
+            Dash();
+        }
+
+        if (isDashing)
+        {
+            if (facingRight)
+            {
+                rb.velocity = new Vector3(dashSpeed, 0, 0);
+            }
+            else
+            {
+                rb.velocity = new Vector3(-dashSpeed, 0, 0);
+            }
+        }
+
+        /*
+        if (isDashing)
+        {
+            ac.SetBool("isDashing", true);
+        }
+        else
+        {
+            ac.SetBool("isDashing", false);
+        }
+        */
     }
 
-    void GetAlignment()
+    void Dash()
+    {
+        dashReady = false;
+        isDashing = true;
+        dashCounter = dashTime;
+        audioSource.PlayOneShot(audioDash);
+        StartCoroutine(Dashing());
+    }
+
+
+        void GetAlignment()
     {
         RaycastHit hitFront;
         RaycastHit hitMiddle;
@@ -178,5 +253,11 @@ public class PlayerMovement : MonoBehaviour
     {
         facingRight = !facingRight;
         model.transform.localRotation *= Quaternion.Euler(0, 180, 0);
+    }
+
+    IEnumerator Dashing()
+    {   
+        yield return new WaitForSeconds(dashTime);
+        isDashing =  false;
     }
 }
