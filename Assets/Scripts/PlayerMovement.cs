@@ -62,13 +62,6 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        
-    }
-
-    void FixedUpdate()
-    {
-
-
         //Walking
 
         float move = Input.GetAxis("Horizontal");
@@ -80,17 +73,6 @@ public class PlayerMovement : MonoBehaviour
         }
 
         ac.SetFloat("Speed", Mathf.Abs(move));
-
-        //Character Friction
-
-        if (grounded && move == 0f)
-        {
-            GetComponent<Collider>().material.staticFriction = 2;
-        }
-        else
-        {
-            GetComponent<Collider>().material.staticFriction = 0;
-        }
 
         //Jumping
 
@@ -115,56 +97,6 @@ public class PlayerMovement : MonoBehaviour
                 canDoubleJump = false;
             }
 
-        }
-
-        ac.SetFloat("verticalSpeed", rb.velocity.y);
-
-        if (jumpCooldownCounter > 0)
-        {
-            jumpCooldownCounter -= Time.deltaTime;
-        }
-
-        //Jumping
-
-
-        //Grounded
-
-        groundCollisions = Physics.OverlapSphere(groundCheck.position, groundCheckRadius, groundLayer);
-        if (groundCollisions.Length > 0 && jumpCooldownCounter <= 0f)
-        {
-            grounded = true;
-            canDoubleJump = true;
-        }
-        else
-        {
-            grounded = false;
-        }
-
-
-
-
-        ac.SetBool("Grounded", grounded);
-
-
-        //Flip
-
-        if (move > 0 && !facingRight)
-        {
-            Flip();
-        }
-        else if (move < 0 && facingRight)
-        {
-            Flip();
-        }
-
-
-        //Sliding
-
-        GetAlignment();
-
-        if (standingOnSlopeLeft == true || standingOnSlopeRight == true)
-        {
-            //rb.AddForce(new Vector3(0, -slopeSlidingForce, 0));
         }
 
         //Dash
@@ -200,6 +132,68 @@ public class PlayerMovement : MonoBehaviour
             ac.SetBool("isDashing", false);
         }
         */
+
+        //Flip
+
+        if (move > 0 && !facingRight)
+        {
+            Flip();
+        }
+        else if (move < 0 && facingRight)
+        {
+            Flip();
+        }
+
+        //Character Friction
+
+        if (grounded && move == 0f)
+        {
+            GetComponent<Collider>().material.staticFriction = 2;
+        }
+        else
+        {
+            GetComponent<Collider>().material.staticFriction = 0;
+        }
+
+
+        ac.SetFloat("verticalSpeed", rb.velocity.y);
+
+        if (jumpCooldownCounter > 0)
+        {
+            jumpCooldownCounter -= Time.deltaTime;
+        }
+
+    }
+
+    void FixedUpdate()
+    {
+
+
+        //Grounded
+
+        groundCollisions = Physics.OverlapSphere(groundCheck.position, groundCheckRadius, groundLayer);
+        if (groundCollisions.Length > 0 && jumpCooldownCounter <= 0f)
+        {
+            grounded = true;
+            canDoubleJump = true;
+        }
+        else
+        {
+            grounded = false;
+        }
+
+        ac.SetBool("Grounded", grounded);
+
+
+        //Sliding
+
+        GetAlignment();
+
+        if (standingOnSlopeLeft == true || standingOnSlopeRight == true)
+        {
+            //rb.AddForce(new Vector3(0, -slopeSlidingForce, 0));
+        }
+
     }
 
     void Dash()
