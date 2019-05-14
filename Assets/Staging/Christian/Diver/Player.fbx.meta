@@ -1,20 +1,17 @@
 fileFormatVersion: 2
-guid: 81d6c95bb7537384f99a94b47229b1bd
+guid: 5f4b72248a2342d4baf3726bb85bf3de
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable:
   - first:
       74: 1827226128182048838
-    second: Cat_Idle
+    second: Diver_Idle
   - first:
-      74: 3628555851317885868
-    second: Cat_Sit
+      74: -3543787936524388529
+    second: Diver_Walk
   - first:
-      74: 4912488621135777042
-    second: Cat_Walk
-  - first:
-      74: -7175003516569268813
-    second: Cat_Run
+      74: -3707703395541216494
+    second: Diver_Falling
   externalObjects: {}
   materials:
     importMaterials: 0
@@ -44,11 +41,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Cat_Idle
+      name: Diver_Idle
       takeName: Take 001
       internalID: 1827226128182048838
       firstFrame: 1
-      lastFrame: 121
+      lastFrame: 241
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -73,11 +70,11 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Cat_Sit
+      name: Diver_Walk
       takeName: Take 001
-      internalID: 3628555851317885868
-      firstFrame: 122
-      lastFrame: 242
+      internalID: -3543787936524388529
+      firstFrame: 242
+      lastFrame: 272
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -102,40 +99,11 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Cat_Walk
+      name: Diver_Falling
       takeName: Take 001
-      internalID: 4912488621135777042
-      firstFrame: 243
-      lastFrame: 273
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: Cat_Run
-      takeName: Take 001
-      internalID: -7175003516569268813
-      firstFrame: 274
-      lastFrame: 304
+      internalID: -3707703395541216494
+      firstFrame: 608
+      lastFrame: 726
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -166,10 +134,10 @@ ModelImporter:
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
-    importVisibility: 1
+    importVisibility: 0
     importBlendShapes: 1
-    importCameras: 1
-    importLights: 1
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
