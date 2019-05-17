@@ -9,7 +9,8 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: New_Graph_basecolor
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: FT_EDGE_TESS _EMISSION _METALLICGLOSSMAP _NORMALMAP _SPECGLOSSMAP
+  m_ShaderKeywords: FT_EDGE_TESS _EMISSION _METALLICGLOSSMAP _NORMALMAP _PARALLAXMAP
+    _SPECGLOSSMAP
   m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -20,7 +21,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: 3aadde6a26f64c541ad3e185899ad755, type: 3}
+        m_Texture: {fileID: 2800000, guid: 50adfe5646bf9dd45ac554367a6c7624, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -40,11 +41,11 @@ Material:
         m_Scale: {x: 2.76, y: 2.38}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: ef5eaaf11053ae74cab8bfa1a838ba39, type: 3}
+        m_Texture: {fileID: 2800000, guid: 99cbf913216345b4593de17feb3f5b23, type: 3}
         m_Scale: {x: 2.76, y: 2.38}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
-        m_Texture: {fileID: 2800000, guid: 6d27983a81461b74dbeb7964e1df3654, type: 3}
+        m_Texture: {fileID: 2800000, guid: 151da9d5ca7560c4a87496ed8f6df287, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -72,7 +73,7 @@ Material:
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
-    - _Parallax: 0.029374998
+    - _Parallax: 0.0561
     - _Phong: 0.313
     - _ShadowLOD: 0
     - _SmoothnessTextureChannel: 0
@@ -85,5 +86,5 @@ Material:
     - _maxDist: 448
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissionColor: {r: 0.3773585, g: 0.051619805, b: 0.06046257, a: 1}
+    - _EmissionColor: {r: 0.00021063113, g: 0.00021063113, b: 0.00021063113, a: 1}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
