@@ -1,23 +1,23 @@
 fileFormatVersion: 2
-guid: 5e4e0fde870d49a41838bb61b11f3b20
+guid: fdb4106fae28115469ca2eb483cb1920
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable:
   - first:
       74: 1827226128182048838
-    second: Fox_Idle
+    second: Player_Idle
   - first:
-      74: 8405574006268168675
-    second: Fox_Walk
+      74: 4272298700473792222
+    second: Player_Walk
   - first:
-      74: -7803262388859474175
-    second: Fox_Run
+      74: 6599214315619726264
+    second: Player_Run
   - first:
-      74: 9161667605582701185
-    second: Fox_Ascending
+      74: 3525040349235712277
+    second: Player_Ascending
   - first:
-      74: -6412196684306870100
-    second: Fox_Falling
+      74: -998496362607748373
+    second: Player_Falling
   externalObjects: {}
   materials:
     importMaterials: 0
@@ -47,11 +47,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Fox_Idle
+      name: Player_Idle
       takeName: Take 001
       internalID: 1827226128182048838
       firstFrame: 1
-      lastFrame: 121
+      lastFrame: 241
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -76,11 +76,11 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Fox_Walk
+      name: Player_Walk
       takeName: Take 001
-      internalID: 8405574006268168675
-      firstFrame: 122
-      lastFrame: 152
+      internalID: 4272298700473792222
+      firstFrame: 242
+      lastFrame: 272
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -105,11 +105,11 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Fox_Run
+      name: Player_Run
       takeName: Take 001
-      internalID: -7803262388859474175
-      firstFrame: 153
-      lastFrame: 183
+      internalID: 6599214315619726264
+      firstFrame: 273
+      lastFrame: 303
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -134,11 +134,11 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Fox_Ascending
+      name: Player_Ascending
       takeName: Take 001
-      internalID: 9161667605582701185
-      firstFrame: 246
-      lastFrame: 366
+      internalID: 3525040349235712277
+      firstFrame: 304
+      lastFrame: 364
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -163,11 +163,11 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Fox_Falling
+      name: Player_Falling
       takeName: Take 001
-      internalID: -6412196684306870100
-      firstFrame: 367
-      lastFrame: 487
+      internalID: -998496362607748373
+      firstFrame: 365
+      lastFrame: 425
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -198,10 +198,10 @@ ModelImporter:
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
-    importVisibility: 1
+    importVisibility: 0
     importBlendShapes: 1
-    importCameras: 1
-    importLights: 1
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1

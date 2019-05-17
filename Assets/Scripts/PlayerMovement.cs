@@ -167,6 +167,9 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
+        //Animation Speed
+
+        ac.speed = runSpeed / 4;
 
 
         //Grounded
