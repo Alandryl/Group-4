@@ -35,6 +35,7 @@ public class PlayerMovement : MonoBehaviour
 
 
     [Header("Dash")]
+
     public float dashSpeed = 15;
     public float dashTime = 0.25f;
     float dashCounter;
@@ -120,6 +121,14 @@ public class PlayerMovement : MonoBehaviour
             {
                 rb.velocity = new Vector3(-dashSpeed, 0, 0);
             }
+
+            ac.SetBool("Dashing", true);
+            dashEffect.SetActive(true);
+        }
+        else
+        {
+            ac.SetBool("Dashing", false);
+            dashEffect.SetActive(false);
         }
 
         /*
