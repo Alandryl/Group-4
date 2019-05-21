@@ -13,9 +13,10 @@ public class PlayerMovement : MonoBehaviour
     public bool grounded = false;
     bool standingOnSlopeLeft;
     bool standingOnSlopeRight;
-    public bool canDoubleJump;
 
     [Header("Movement")]
+
+    public bool movementEnabled = true;
 
     public float runSpeed = 4;
     bool facingRight;
@@ -33,6 +34,10 @@ public class PlayerMovement : MonoBehaviour
     float groundCheckRadius = 0.2f;
 
 
+    [Header("Double Jump")]
+
+    public bool doubleJumpUnlocked;
+    public bool canDoubleJump;
 
     [Header("Dash")]
 
@@ -63,12 +68,13 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+
         //Walking
 
         float move = Input.GetAxis("Horizontal");
 
-        if ((facingRight && !standingOnSlopeRight && !isDashing) ||
-           (!facingRight && !standingOnSlopeLeft && !isDashing))
+        if ((facingRight && !standingOnSlopeRight && !isDashing) && movementEnabled ||
+           (!facingRight && !standingOnSlopeLeft && !isDashing && movementEnabled))
         {
             rb.velocity = new Vector3(move * runSpeed, rb.velocity.y, 0);
         }
@@ -77,7 +83,7 @@ public class PlayerMovement : MonoBehaviour
 
         //Jumping
 
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump") && movementEnabled)
         {
             if (grounded && jumpCooldownCounter <= 0f)
             {
@@ -88,7 +94,7 @@ public class PlayerMovement : MonoBehaviour
                 jumpCooldownCounter = jumpCooldown;
             }
 
-            if (canDoubleJump && !grounded && jumpCooldownCounter <= 0f)
+            if (canDoubleJump && !grounded && jumpCooldownCounter <= 0f && doubleJumpUnlocked)
             {
                 grounded = false;
                 rb.velocity = Vector3.zero;
@@ -106,7 +112,7 @@ public class PlayerMovement : MonoBehaviour
         {
             dashReady = true;
         }
-        if (Input.GetButtonDown("Ability1") && grounded == false && dashReady)
+        if (Input.GetButtonDown("Ability1") && grounded == false && dashReady && movementEnabled)
         {
             Dash();
         }
@@ -144,11 +150,11 @@ public class PlayerMovement : MonoBehaviour
 
         //Flip
 
-        if (move > 0 && !facingRight)
+        if (move > 0 && !facingRight && movementEnabled)
         {
             Flip();
         }
-        else if (move < 0 && facingRight)
+        else if (move < 0 && facingRight && movementEnabled)
         {
             Flip();
         }
