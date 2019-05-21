@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
 
     AudioSource audioSource;
     Rigidbody rb;
-    Animator ac;
+    public Animator ac;
     public GameObject model;
 
     public bool grounded = false;
