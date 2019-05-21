@@ -11156,6 +11156,21 @@ PrefabInstance:
       propertyPath: aOpensNewDialogue
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: questionText
+      value: Are you a human
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: answerAText
+      value: No, I am a robot
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: answerBText
+      value: Yes, I am
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fed549c4e142e5a40b75743ea576ac83, type: 3}
 --- !u!1 &1979402624
