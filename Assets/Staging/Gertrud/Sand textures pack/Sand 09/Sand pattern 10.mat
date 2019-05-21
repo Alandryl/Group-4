@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Sand pattern 09
+  m_Name: Sand pattern 10
   m_Shader: {fileID: 4, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -30,5 +30,5 @@ Material:
     m_Floats:
     - _Shininess: 0.03
     m_Colors:
-    - _Color: {r: 1, g: 0.7845999, b: 0.4078431, a: 0.88235295}
-    - _SpecColor: {r: 0.7490196, g: 0.7490196, b: 0.7490196, a: 1}
+    - _Color: {r: 0.5222982, g: 0.7264151, b: 0.29810432, a: 0.88235295}
+    - _SpecColor: {r: 0.8113208, g: 0.7971416, b: 0.24875402, a: 1}
