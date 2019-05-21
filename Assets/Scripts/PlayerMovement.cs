@@ -52,6 +52,7 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Audio")]
     public AudioClip audioJump;
+    public AudioClip audioDoubleJump;
     public AudioClip audioDash;
 
 
@@ -83,7 +84,7 @@ public class PlayerMovement : MonoBehaviour
 
         //Jumping
 
-        if (Input.GetButtonDown("Jump") && movementEnabled)
+        if (Input.GetButtonDown("Jump") && movementEnabled && !isDashing)
         {
             if (grounded && jumpCooldownCounter <= 0f)
             {
@@ -99,11 +100,11 @@ public class PlayerMovement : MonoBehaviour
                 grounded = false;
                 rb.velocity = Vector3.zero;
                 rb.AddForce(new Vector3(0, jumpHeight, 0));
-                audioSource.PlayOneShot(audioJump);
+                audioSource.PlayOneShot(audioDoubleJump);
                 jumpCooldownCounter = jumpCooldown;
                 canDoubleJump = false;
+                ac.SetTrigger("doubleJump");
             }
-
         }
 
         //Dash
