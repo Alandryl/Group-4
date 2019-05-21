@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
@@ -14,14 +15,17 @@ public class PauseMenu : MonoBehaviour
 
     bool disableSelection;
 
+    public GameObject firstSelectedButton;
+    EventSystem eventSystem;
+
     void Start()
     {
-
+        eventSystem = GameObject.Find("EventSystem").GetComponent<EventSystem>();
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetButtonDown("Cancel"))
         {
             if (gameIsPaused)
             {
@@ -30,6 +34,10 @@ public class PauseMenu : MonoBehaviour
             else
             {
                 Pause();
+
+                //GameObject.Find("EventSystem").GetComponent<EventSystem>().SetSelectedGameObject(firstSelectedButton, null);
+
+                //EventSystem.current.GetComponent<EventSystem>().SetSelectedGameObject(firstSelectedButton, null);
             }
         }
     }

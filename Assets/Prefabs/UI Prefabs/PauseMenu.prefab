@@ -154,6 +154,7 @@ MonoBehaviour:
   pauseMenuUI: {fileID: 7964756953056612790}
   mainMenuScene: MainMenu
   BlackScreenFadeObject: {fileID: 0}
+  firstSelectedButton: {fileID: 4460721992616945597}
 --- !u!1 &4460721992083756894
 GameObject:
   m_ObjectHideFlags: 0
