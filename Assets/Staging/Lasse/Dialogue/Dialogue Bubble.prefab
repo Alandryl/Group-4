@@ -140,7 +140,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -44
   m_TargetDisplay: 0
 --- !u!114 &7675511870447796932
 MonoBehaviour:
@@ -194,8 +194,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questionText: Choose a color.
+  hasAnswers: 0
   answerAText: Green
   answerBText: Blue
+  aOpensNewDialogue: 0
+  bOpensNewDialogue: 0
+  aDialogueBubble: {fileID: 0}
+  bDialogueBubble: {fileID: 0}
+  continueBubble: {fileID: 0}
   questionTextObject: {fileID: 7675511870561692699}
   answerTextAObject: {fileID: 7675511870060938916}
   answerTextBObject: {fileID: 7675511870561094973}

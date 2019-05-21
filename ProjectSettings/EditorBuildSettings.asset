@@ -5,10 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MainMenu.unity
     guid: fb1072b741fe05d4497838609932d5be
-  - enabled: 1
+  - enabled: 0
     path: Assets/Staging/Christian/Christian Test Scene.unity
     guid: d96704eb14181724c904b7b6d6f2ef13
+  - enabled: 1
+    path: Assets/Scenes/Jungle building scene.unity
+    guid: 556766baeb16a994db7b820773506e5a
   m_configObjects: {}
