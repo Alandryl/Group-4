@@ -256,7 +256,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   model: {fileID: 6450904650301010008}
   grounded: 0
-  canDoubleJump: 0
+  movementEnabled: 1
   runSpeed: 4
   jumpHeight: 500
   jumpCooldown: 0.2
@@ -266,11 +266,14 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   groundCheck: {fileID: 3663161268905172638}
+  doubleJumpUnlocked: 1
+  canDoubleJump: 0
   dashSpeed: 8
   dashTime: 0.5
   isDashing: 0
   dashEffect: {fileID: 642050210135774384}
   audioJump: {fileID: 8300000, guid: 11932286f9f1adb4685cc13e44d4b0af, type: 3}
+  audioDoubleJump: {fileID: 0}
   audioDash: {fileID: 8300000, guid: 11932286f9f1adb4685cc13e44d4b0af, type: 3}
 --- !u!114 &3439220960377141142
 MonoBehaviour:
