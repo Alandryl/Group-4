@@ -13,31 +13,31 @@ MonoBehaviour:
   m_Name: Fast_Zoom_Cameras Blends
   m_EditorClassIdentifier: 
   m_CustomBlends:
-  - m_From: OutDoors_Camera_Default
+  - m_From: OutDoors_Camera_Close_Up
     m_To: OutDoors_Camera_Vista_Static
     m_Blend:
-      m_Style: 2
-      m_Time: 8
+      m_Style: 3
+      m_Time: 12
       m_CustomCurve:
         serializedVersion: 2
         m_Curve:
         - serializedVersion: 3
           time: 0
           value: 0
-          inSlope: 1.0113119
-          outSlope: 1.0113119
+          inSlope: -0.059424218
+          outSlope: -0.059424218
           tangentMode: 0
           weightedMode: 0
           inWeight: 0.33333334
-          outWeight: 0.09523809
+          outWeight: 0.13250516
         - serializedVersion: 3
           time: 1
           value: 1
-          inSlope: 0
-          outSlope: 0
+          inSlope: 0.2112858
+          outSlope: 0.2112858
           tangentMode: 0
           weightedMode: 0
-          inWeight: 0.33333334
+          inWeight: 0.09316778
           outWeight: 0.33333334
         m_PreInfinity: 2
         m_PostInfinity: 2
@@ -78,7 +78,7 @@ MonoBehaviour:
   - m_From: OutDoors_Camera_Default
     m_To: OutDoors_Camera_Close_Up
     m_Blend:
-      m_Style: 1
+      m_Style: 2
       m_Time: 3
       m_CustomCurve:
         serializedVersion: 2
@@ -89,7 +89,7 @@ MonoBehaviour:
   - m_From: OutDoors_Camera_Close_Up
     m_To: OutDoors_Camera_Default
     m_Blend:
-      m_Style: 1
+      m_Style: 2
       m_Time: 3
       m_CustomCurve:
         serializedVersion: 2
@@ -135,6 +135,46 @@ MonoBehaviour:
     m_Blend:
       m_Style: 0
       m_Time: 2
+      m_CustomCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 0
+        m_PostInfinity: 0
+        m_RotationOrder: 0
+  - m_From: OutDoors_Camera_Default
+    m_To: OutDoors_Camera_Vista_Static
+    m_Blend:
+      m_Style: 3
+      m_Time: 8
+      m_CustomCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 1
+          outSlope: 1
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 1
+          outSlope: 1
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 0
+  - m_From: OutDoors_Camera_Vista_Static
+    m_To: OutDoors_Camera_Close_Up
+    m_Blend:
+      m_Style: 2
+      m_Time: 4
       m_CustomCurve:
         serializedVersion: 2
         m_Curve: []
