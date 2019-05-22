@@ -117,7 +117,11 @@ public class DialogueBubble : MonoBehaviour
 
 
                     InteractTestScript interactObject = gameObject.GetComponentInParent<InteractTestScript>();
-                    interactObject.bubbleObject = continueBubble;
+                    if (interactObject != null)
+                    {
+                        interactObject.bubbleObject = continueBubble;
+                    }
+                    
 
                     if (Continue != null)
                     {
@@ -134,7 +138,10 @@ public class DialogueBubble : MonoBehaviour
                         if (aOpensNewDialogue && aDialogueBubble != null)
                         {
                             InteractTestScript interactObject = gameObject.GetComponentInParent<InteractTestScript>();
-                            interactObject.bubbleObject = aDialogueBubble;
+                            if (interactObject != null)
+                            {
+                                interactObject.bubbleObject = aDialogueBubble;
+                            }
                             aDialogueBubble.SetActive(true);
                             gameObject.SetActive(false);
                         }
@@ -143,9 +150,10 @@ public class DialogueBubble : MonoBehaviour
                             if (OptionA != null)
                             {
                                 OptionA();
-                                gameObject.SetActive(false);
+                                
 
                             }
+                            gameObject.SetActive(false);
                         }
 
 
@@ -155,7 +163,10 @@ public class DialogueBubble : MonoBehaviour
                         if (bOpensNewDialogue && bDialogueBubble != null)
                         {
                             InteractTestScript interactObject = gameObject.GetComponentInParent<InteractTestScript>();
-                            interactObject.bubbleObject = bDialogueBubble;
+                            if (interactObject != null)
+                            {
+                                interactObject.bubbleObject = bDialogueBubble;
+                            }
                             gameObject.SetActive(false);
                             bDialogueBubble.SetActive(true);
                         }
@@ -164,8 +175,9 @@ public class DialogueBubble : MonoBehaviour
                             if (OptionB != null)
                             {
                                 OptionB();
-                                gameObject.SetActive(false);
+                                
                             }
+                            gameObject.SetActive(false);
                         }
 
                     }

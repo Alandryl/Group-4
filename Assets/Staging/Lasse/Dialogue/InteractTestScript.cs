@@ -20,17 +20,20 @@ public class InteractTestScript : MonoBehaviour
         {
             if (!triggersAutomatically)
             {
-                xIndicator.SetActive(true);
+                if (xIndicator != null)
+                {
+                    xIndicator.SetActive(true);
+                }
             }
             else
             {
-                 EnableObjects();
-                    
-                    hasZeroed = false;
-                    if (oneOff)
-                    {
-                        hasSubmitted = true;
-                    }
+                EnableObjects();
+
+                hasZeroed = false;
+                if (oneOff)
+                {
+                    hasSubmitted = true;
+                }
             }
              
         }
@@ -56,7 +59,10 @@ public class InteractTestScript : MonoBehaviour
                 if (submitInput > 0)
                 {
                     EnableObjects();
-                    xIndicator.SetActive(false);
+                    if (xIndicator != null)
+                    {
+                        xIndicator.SetActive(false);
+                    }
                     hasZeroed = false;
                     if (oneOff)
                     {
@@ -74,7 +80,11 @@ public class InteractTestScript : MonoBehaviour
         if (other.tag == "Player")
         {
             DisableObjects();
-            xIndicator.SetActive(false);
+            if (xIndicator != null)
+            {
+                xIndicator.SetActive(false);
+            }
+           
         }
     }
 
