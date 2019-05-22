@@ -16,8 +16,8 @@ MonoBehaviour:
   - m_From: OutDoors_Camera_Close_Up
     m_To: OutDoors_Camera_Vista_Static
     m_Blend:
-      m_Style: 7
-      m_Time: 15
+      m_Style: 3
+      m_Time: 12
       m_CustomCurve:
         serializedVersion: 2
         m_Curve:
@@ -78,7 +78,7 @@ MonoBehaviour:
   - m_From: OutDoors_Camera_Default
     m_To: OutDoors_Camera_Close_Up
     m_Blend:
-      m_Style: 1
+      m_Style: 2
       m_Time: 3
       m_CustomCurve:
         serializedVersion: 2
@@ -89,7 +89,7 @@ MonoBehaviour:
   - m_From: OutDoors_Camera_Close_Up
     m_To: OutDoors_Camera_Default
     m_Blend:
-      m_Style: 1
+      m_Style: 2
       m_Time: 3
       m_CustomCurve:
         serializedVersion: 2
