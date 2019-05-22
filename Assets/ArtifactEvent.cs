@@ -16,11 +16,19 @@ public class ArtifactEvent : MonoBehaviour
     public GameObject particleEffects;
     public GameObject lightObject;
 
+
+
+    public GameObject musicPlayerObject;
+    MusicPlayer musicPlayer;
+
     // Start is called before the first frame update
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
         particleEffects.SetActive(false);
+
+        musicPlayerObject = GameObject.Find("MusicPlayer");
+        musicPlayer = musicPlayerObject.GetComponent<MusicPlayer>();
     }
 
     // Update is called once per frame
@@ -47,6 +55,7 @@ public class ArtifactEvent : MonoBehaviour
     IEnumerator Activate()
     {
         audioSource.PlayOneShot(audioTension);
+        musicPlayer.fadeMusic = true;
         particleEffects.SetActive(true);
         yield return new WaitForSeconds(11);
         BlackScreenFadeObject.GetComponent<Animator>().SetTrigger("Fade");
@@ -54,6 +63,10 @@ public class ArtifactEvent : MonoBehaviour
         BlackScreenFadeObject.GetComponent<Animator>().SetTrigger("Fade");
         particleEffects.SetActive(false);
         lightObject.SetActive(false);
+        musicPlayer.fadeMusic = false;
+        player.GetComponent<PlayerMovement>().ac.SetTrigger("lyingDown");
+        yield return new WaitForSeconds(2);
+        player.GetComponent<PlayerMovement>().ac.SetTrigger("riseUp");
         yield return new WaitForSeconds(1);
         player.GetComponent<PlayerMovement>().movementEnabled = true;
         player.GetComponent<PlayerMovement>().doubleJumpUnlocked = true;

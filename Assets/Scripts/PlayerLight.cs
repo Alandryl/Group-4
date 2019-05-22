@@ -38,13 +38,18 @@ public class PlayerLight : MonoBehaviour
         {
             isInDark = true;
         }
-        else
+
+    }
+
+    void OnTriggerExit(Collider col)
+    {
+        if (col.gameObject.layer == 10)
         {
             isInDark = false;
         }
-
     }
-    
+
+
     /*
     void OnTriggerEnter(Collider col)
     {

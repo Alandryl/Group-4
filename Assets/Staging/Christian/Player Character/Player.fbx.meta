@@ -24,6 +24,12 @@ ModelImporter:
   - first:
       74: 3060872287085348379
     second: Player_DoubleJump
+  - first:
+      74: -5689449298548171765
+    second: Player_LyingDown
+  - first:
+      74: -8997366251460796185
+    second: Player_LyingDownRise
   externalObjects: {}
   materials:
     importMaterials: 0
@@ -232,6 +238,64 @@ ModelImporter:
       internalID: 3060872287085348379
       firstFrame: 487
       lastFrame: 547
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Player_LyingDown
+      takeName: Take 001
+      internalID: -5689449298548171765
+      firstFrame: 549
+      lastFrame: 608
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Player_LyingDownRise
+      takeName: Take 001
+      internalID: -8997366251460796185
+      firstFrame: 609
+      lastFrame: 669
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

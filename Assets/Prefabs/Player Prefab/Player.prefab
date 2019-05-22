@@ -254,6 +254,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47968c971b349554d831fe3cdd2aed7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ac: {fileID: 0}
   model: {fileID: 6450904650301010008}
   grounded: 0
   movementEnabled: 1
@@ -273,7 +274,7 @@ MonoBehaviour:
   isDashing: 0
   dashEffect: {fileID: 642050210135774384}
   audioJump: {fileID: 8300000, guid: 11932286f9f1adb4685cc13e44d4b0af, type: 3}
-  audioDoubleJump: {fileID: 0}
+  audioDoubleJump: {fileID: 8300000, guid: 2df721ed7e79a4e4fa972d1a2873da44, type: 3}
   audioDash: {fileID: 8300000, guid: 11932286f9f1adb4685cc13e44d4b0af, type: 3}
 --- !u!114 &3439220960377141142
 MonoBehaviour:
@@ -5178,13 +5179,13 @@ Light:
   serializedVersion: 9
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1.5
+  m_Intensity: 5
   m_Range: 10
-  m_SpotAngle: 60
+  m_SpotAngle: 90
   m_InnerSpotAngle: 4
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
