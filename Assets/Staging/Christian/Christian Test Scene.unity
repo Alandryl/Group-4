@@ -38528,6 +38528,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3663161269612296808, guid: dfd9b55bd3e300e45bbbfc71ed4dc65b,
+        type: 3}
+      propertyPath: audioLanding
+      value: 
+      objectReference: {fileID: 8300000, guid: e40f12fba98849f43a7f4f92a8c33bdc, type: 3}
+    - target: {fileID: 3663161269612296808, guid: dfd9b55bd3e300e45bbbfc71ed4dc65b,
+        type: 3}
+      propertyPath: audioJump
+      value: 
+      objectReference: {fileID: 8300000, guid: 2df721ed7e79a4e4fa972d1a2873da44, type: 3}
+    - target: {fileID: 3663161269612296808, guid: dfd9b55bd3e300e45bbbfc71ed4dc65b,
+        type: 3}
+      propertyPath: audioDash
+      value: 
+      objectReference: {fileID: 8300000, guid: 9a971c90f1c7346499bf0a21bf0d8168, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dfd9b55bd3e300e45bbbfc71ed4dc65b, type: 3}
 --- !u!1001 &3697991798014558642
@@ -38605,7 +38620,7 @@ PrefabInstance:
     - target: {fileID: 3697991799271289733, guid: aff88b9f0f074194da6ee8720916c4f0,
         type: 3}
       propertyPath: offset.z
-      value: -6
+      value: -8
       objectReference: {fileID: 0}
     - target: {fileID: 3697991799271289733, guid: aff88b9f0f074194da6ee8720916c4f0,
         type: 3}
