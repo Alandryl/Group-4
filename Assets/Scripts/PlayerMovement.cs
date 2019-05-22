@@ -46,14 +46,20 @@ public class PlayerMovement : MonoBehaviour
     float dashCounter;
     bool dashReady;
     public bool isDashing;
-    public GameObject dashEffect;
 
 
 
     [Header("Audio")]
+    public AudioClip audioFootstep;
     public AudioClip audioJump;
     public AudioClip audioDoubleJump;
     public AudioClip audioDash;
+    public AudioClip audioLanding;
+
+    [Header("Effects")]
+    public GameObject doubleJumpEffect;
+    public GameObject dashEffect;
+    public GameObject landingEffect;
 
 
     //public float slopeSlidingForce = 100;
@@ -104,6 +110,7 @@ public class PlayerMovement : MonoBehaviour
                 jumpCooldownCounter = jumpCooldown;
                 canDoubleJump = false;
                 ac.SetTrigger("doubleJump");
+                doubleJumpEffect.GetComponent<ParticleSystem>().Play();
             }
         }
 
@@ -130,12 +137,10 @@ public class PlayerMovement : MonoBehaviour
             }
 
             ac.SetBool("Dashing", true);
-            dashEffect.SetActive(true);
         }
         else
         {
             ac.SetBool("Dashing", false);
-            dashEffect.SetActive(false);
         }
 
         /*
@@ -193,6 +198,12 @@ public class PlayerMovement : MonoBehaviour
         groundCollisions = Physics.OverlapSphere(groundCheck.position, groundCheckRadius, groundLayer);
         if (groundCollisions.Length > 0 && jumpCooldownCounter <= 0f)
         {
+            if (!grounded && rb.velocity.y < -5f)
+            {
+                landingEffect.GetComponent<ParticleSystem>().Play();
+                audioSource.PlayOneShot(audioLanding);
+            }
+
             grounded = true;
             canDoubleJump = true;
         }
@@ -222,10 +233,11 @@ public class PlayerMovement : MonoBehaviour
         dashCounter = dashTime;
         audioSource.PlayOneShot(audioDash);
         StartCoroutine(Dashing());
+        dashEffect.GetComponent<ParticleSystem>().Play();
     }
 
 
-        void GetAlignment()
+    void GetAlignment()
     {
         RaycastHit hitFront;
         RaycastHit hitMiddle;
@@ -273,4 +285,10 @@ public class PlayerMovement : MonoBehaviour
         yield return new WaitForSeconds(dashTime);
         isDashing =  false;
     }
+
+    public void Footstep()
+    {
+        audioSource.PlayOneShot(audioFootstep);
+    }
+
 }
