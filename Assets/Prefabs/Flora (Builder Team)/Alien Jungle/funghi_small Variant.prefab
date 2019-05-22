@@ -10,7 +10,12 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 9747f9d4f12d35b4da480d5b28ca9b56,
         type: 3}
       propertyPath: m_Name
-      value: funghi_small
+      value: funghi_small Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 9747f9d4f12d35b4da480d5b28ca9b56,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 9747f9d4f12d35b4da480d5b28ca9b56,
         type: 3}

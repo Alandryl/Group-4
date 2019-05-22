@@ -10,7 +10,12 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 66b5568f120e892498fe39a4a47c5f5e,
         type: 3}
       propertyPath: m_Name
-      value: Branch_01
+      value: Branch_01 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 66b5568f120e892498fe39a4a47c5f5e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 66b5568f120e892498fe39a4a47c5f5e,
         type: 3}

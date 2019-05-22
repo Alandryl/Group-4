@@ -10,7 +10,12 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: c45f42dd39a6ab84ca8a940b6fc3683f,
         type: 3}
       propertyPath: m_Name
-      value: Liguan_04
+      value: Liguan_04 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: c45f42dd39a6ab84ca8a940b6fc3683f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: c45f42dd39a6ab84ca8a940b6fc3683f,
         type: 3}

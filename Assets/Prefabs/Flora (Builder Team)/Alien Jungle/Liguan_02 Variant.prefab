@@ -10,8 +10,18 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 21e3d9b2e9d10f34ca9df13ec19311af,
         type: 3}
       propertyPath: m_Name
-      value: Liguan_02
+      value: Liguan_02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 21e3d9b2e9d10f34ca9df13ec19311af,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: 21e3d9b2e9d10f34ca9df13ec19311af,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a03bc6b252b3b354195bde531e92c720, type: 2}
     - target: {fileID: -4216859302048453862, guid: 21e3d9b2e9d10f34ca9df13ec19311af,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -67,10 +77,5 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -1504981713932161579, guid: 21e3d9b2e9d10f34ca9df13ec19311af,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: a03bc6b252b3b354195bde531e92c720, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21e3d9b2e9d10f34ca9df13ec19311af, type: 3}

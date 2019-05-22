@@ -10,7 +10,12 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 39766c5746542a644a0611cb0e1b52e3,
         type: 3}
       propertyPath: m_Name
-      value: cactus_03
+      value: cactus_03 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 39766c5746542a644a0611cb0e1b52e3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 39766c5746542a644a0611cb0e1b52e3,
         type: 3}

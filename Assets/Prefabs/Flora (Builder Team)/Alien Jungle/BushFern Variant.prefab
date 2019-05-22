@@ -10,7 +10,12 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: e502ecb503fe99446b7be5fca8a41a28,
         type: 3}
       propertyPath: m_Name
-      value: BushFern
+      value: BushFern Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: e502ecb503fe99446b7be5fca8a41a28,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: e502ecb503fe99446b7be5fca8a41a28,
         type: 3}
