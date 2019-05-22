@@ -12381,7 +12381,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &247943814
 Light:
   m_ObjectHideFlags: 0
@@ -19912,11 +19912,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135628257}
     m_Modifications:
-    - target: {fileID: 8550339543285060478, guid: 88d8c1473e5794b4c8869c2284d21e0e,
-        type: 3}
-      propertyPath: m_Name
-      value: funghi_small Variant (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 4680279445354684781, guid: 88d8c1473e5794b4c8869c2284d21e0e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -19986,6 +19981,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.09110165
+      objectReference: {fileID: 0}
+    - target: {fileID: 8550339543285060478, guid: 88d8c1473e5794b4c8869c2284d21e0e,
+        type: 3}
+      propertyPath: m_Name
+      value: funghi_small Variant (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88d8c1473e5794b4c8869c2284d21e0e, type: 3}
@@ -38378,11 +38378,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135628257}
     m_Modifications:
-    - target: {fileID: 6851137627501394532, guid: db03b856613f45e438fe609ee92132e7,
-        type: 3}
-      propertyPath: m_Name
-      value: cactus_03 Variant (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 7588416420457646199, guid: db03b856613f45e438fe609ee92132e7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -38452,6 +38447,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.35278872
+      objectReference: {fileID: 0}
+    - target: {fileID: 6851137627501394532, guid: db03b856613f45e438fe609ee92132e7,
+        type: 3}
+      propertyPath: m_Name
+      value: cactus_03 Variant (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db03b856613f45e438fe609ee92132e7, type: 3}
@@ -47969,11 +47969,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135628257}
     m_Modifications:
-    - target: {fileID: 7040581012045953817, guid: 04bf54a25bb5fd84ba77689fa363a50a,
-        type: 3}
-      propertyPath: m_Name
-      value: DeadTree_01 Variant (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 6336128136657045770, guid: 04bf54a25bb5fd84ba77689fa363a50a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -48043,6 +48038,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.5453003
+      objectReference: {fileID: 0}
+    - target: {fileID: 7040581012045953817, guid: 04bf54a25bb5fd84ba77689fa363a50a,
+        type: 3}
+      propertyPath: m_Name
+      value: DeadTree_01 Variant (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04bf54a25bb5fd84ba77689fa363a50a, type: 3}
@@ -50150,6 +50150,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DeadTree_02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6116121855231823927, guid: 9ad4729605aa855428533605dbb2954e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7114435844211892772, guid: 9ad4729605aa855428533605dbb2954e,
         type: 3}
@@ -54085,11 +54090,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135628257}
     m_Modifications:
-    - target: {fileID: 9175759883877654357, guid: 9620cbb631c28554b968549e7dbf6d9b,
-        type: 3}
-      propertyPath: m_Name
-      value: cactus_01 Variant (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 5264005544663346502, guid: 9620cbb631c28554b968549e7dbf6d9b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -54159,6 +54159,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.6902254
+      objectReference: {fileID: 0}
+    - target: {fileID: 9175759883877654357, guid: 9620cbb631c28554b968549e7dbf6d9b,
+        type: 3}
+      propertyPath: m_Name
+      value: cactus_01 Variant (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9620cbb631c28554b968549e7dbf6d9b, type: 3}
@@ -59999,11 +60004,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135628257}
     m_Modifications:
-    - target: {fileID: 6851137627501394532, guid: db03b856613f45e438fe609ee92132e7,
-        type: 3}
-      propertyPath: m_Name
-      value: cactus_03 Variant
-      objectReference: {fileID: 0}
     - target: {fileID: 7588416420457646199, guid: db03b856613f45e438fe609ee92132e7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -60073,6 +60073,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.44123137
+      objectReference: {fileID: 0}
+    - target: {fileID: 6851137627501394532, guid: db03b856613f45e438fe609ee92132e7,
+        type: 3}
+      propertyPath: m_Name
+      value: cactus_03 Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db03b856613f45e438fe609ee92132e7, type: 3}
@@ -62016,11 +62021,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135628257}
     m_Modifications:
-    - target: {fileID: 6851137627501394532, guid: db03b856613f45e438fe609ee92132e7,
-        type: 3}
-      propertyPath: m_Name
-      value: cactus_03 Variant (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 7588416420457646199, guid: db03b856613f45e438fe609ee92132e7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -62090,6 +62090,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.53305656
+      objectReference: {fileID: 0}
+    - target: {fileID: 6851137627501394532, guid: db03b856613f45e438fe609ee92132e7,
+        type: 3}
+      propertyPath: m_Name
+      value: cactus_03 Variant (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db03b856613f45e438fe609ee92132e7, type: 3}
@@ -62951,6 +62956,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: ad1f5855a33f0694886cbd301d99cc40, type: 3}
       propertyPath: m_Name
       value: Rock6A (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: ad1f5855a33f0694886cbd301d99cc40, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ad1f5855a33f0694886cbd301d99cc40, type: 3}
       propertyPath: m_LocalPosition.x
@@ -65986,11 +65995,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135628257}
     m_Modifications:
-    - target: {fileID: 6851137627501394532, guid: db03b856613f45e438fe609ee92132e7,
-        type: 3}
-      propertyPath: m_Name
-      value: cactus_03 Variant (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 7588416420457646199, guid: db03b856613f45e438fe609ee92132e7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -66060,6 +66064,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.2067601
+      objectReference: {fileID: 0}
+    - target: {fileID: 6851137627501394532, guid: db03b856613f45e438fe609ee92132e7,
+        type: 3}
+      propertyPath: m_Name
+      value: cactus_03 Variant (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db03b856613f45e438fe609ee92132e7, type: 3}
@@ -67779,11 +67788,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135628257}
     m_Modifications:
-    - target: {fileID: 7040581012045953817, guid: 04bf54a25bb5fd84ba77689fa363a50a,
-        type: 3}
-      propertyPath: m_Name
-      value: DeadTree_01 Variant
-      objectReference: {fileID: 0}
     - target: {fileID: 6336128136657045770, guid: 04bf54a25bb5fd84ba77689fa363a50a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -67853,6 +67857,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.54530036
+      objectReference: {fileID: 0}
+    - target: {fileID: 7040581012045953817, guid: 04bf54a25bb5fd84ba77689fa363a50a,
+        type: 3}
+      propertyPath: m_Name
+      value: DeadTree_01 Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04bf54a25bb5fd84ba77689fa363a50a, type: 3}
@@ -74472,11 +74481,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135628257}
     m_Modifications:
-    - target: {fileID: 5648141833689186078, guid: de3203c4a31c43142b95a2882410b9ab,
-        type: 3}
-      propertyPath: m_Name
-      value: BushFern_small Variant
-      objectReference: {fileID: 0}
     - target: {fileID: 8663063979985718541, guid: de3203c4a31c43142b95a2882410b9ab,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -74546,6 +74550,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.3209538
+      objectReference: {fileID: 0}
+    - target: {fileID: 5648141833689186078, guid: de3203c4a31c43142b95a2882410b9ab,
+        type: 3}
+      propertyPath: m_Name
+      value: BushFern_small Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de3203c4a31c43142b95a2882410b9ab, type: 3}
@@ -82874,6 +82883,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Camera_Set_Up
       objectReference: {fileID: 0}
+    - target: {fileID: 85815149089613775, guid: 8227ea4b0a18f494fb36f5dd06c1c798,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7309047944123372700, guid: 8227ea4b0a18f494fb36f5dd06c1c798,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -84312,11 +84326,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135628257}
     m_Modifications:
-    - target: {fileID: 9175759883877654357, guid: 9620cbb631c28554b968549e7dbf6d9b,
-        type: 3}
-      propertyPath: m_Name
-      value: cactus_01 Variant (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 5264005544663346502, guid: 9620cbb631c28554b968549e7dbf6d9b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -84386,6 +84395,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.696504
+      objectReference: {fileID: 0}
+    - target: {fileID: 9175759883877654357, guid: 9620cbb631c28554b968549e7dbf6d9b,
+        type: 3}
+      propertyPath: m_Name
+      value: cactus_01 Variant (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9620cbb631c28554b968549e7dbf6d9b, type: 3}
@@ -87214,11 +87228,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135628257}
     m_Modifications:
-    - target: {fileID: 9175759883877654357, guid: 9620cbb631c28554b968549e7dbf6d9b,
-        type: 3}
-      propertyPath: m_Name
-      value: cactus_01 Variant
-      objectReference: {fileID: 0}
     - target: {fileID: 5264005544663346502, guid: 9620cbb631c28554b968549e7dbf6d9b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -87288,6 +87297,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.8866433
+      objectReference: {fileID: 0}
+    - target: {fileID: 9175759883877654357, guid: 9620cbb631c28554b968549e7dbf6d9b,
+        type: 3}
+      propertyPath: m_Name
+      value: cactus_01 Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9620cbb631c28554b968549e7dbf6d9b, type: 3}
@@ -90544,11 +90558,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135628257}
     m_Modifications:
-    - target: {fileID: 6772520779777148079, guid: 59efbb9b92bae234ebd290c2b298aa5c,
-        type: 3}
-      propertyPath: m_Name
-      value: TreeStump_02 Variant
-      objectReference: {fileID: 0}
     - target: {fileID: 7757320739237623484, guid: 59efbb9b92bae234ebd290c2b298aa5c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -90618,6 +90627,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6772520779777148079, guid: 59efbb9b92bae234ebd290c2b298aa5c,
+        type: 3}
+      propertyPath: m_Name
+      value: TreeStump_02 Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 59efbb9b92bae234ebd290c2b298aa5c, type: 3}
@@ -97485,11 +97499,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135628257}
     m_Modifications:
-    - target: {fileID: 8550339543285060478, guid: 88d8c1473e5794b4c8869c2284d21e0e,
-        type: 3}
-      propertyPath: m_Name
-      value: funghi_small Variant
-      objectReference: {fileID: 0}
     - target: {fileID: 4680279445354684781, guid: 88d8c1473e5794b4c8869c2284d21e0e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -97559,6 +97568,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.07096799
+      objectReference: {fileID: 0}
+    - target: {fileID: 8550339543285060478, guid: 88d8c1473e5794b4c8869c2284d21e0e,
+        type: 3}
+      propertyPath: m_Name
+      value: funghi_small Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88d8c1473e5794b4c8869c2284d21e0e, type: 3}
@@ -97993,7 +98007,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2106416418
 Transform:
   m_ObjectHideFlags: 0
@@ -98533,11 +98547,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135628257}
     m_Modifications:
-    - target: {fileID: 9175759883877654357, guid: 9620cbb631c28554b968549e7dbf6d9b,
-        type: 3}
-      propertyPath: m_Name
-      value: cactus_01 Variant (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 5264005544663346502, guid: 9620cbb631c28554b968549e7dbf6d9b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -98607,6 +98616,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.583935
+      objectReference: {fileID: 0}
+    - target: {fileID: 9175759883877654357, guid: 9620cbb631c28554b968549e7dbf6d9b,
+        type: 3}
+      propertyPath: m_Name
+      value: cactus_01 Variant (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9620cbb631c28554b968549e7dbf6d9b, type: 3}
