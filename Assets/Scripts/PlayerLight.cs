@@ -4,11 +4,16 @@ using UnityEngine;
 
 public class PlayerLight : MonoBehaviour
 {
+    [Header("Player Light")]
+
     Rigidbody rb;
     public GameObject lightObject;
     public LayerMask darkLayer;
+    bool isInDark;
 
-    public bool isInDark;
+    [Header("Player Helmet")]
+    public GameObject helmetObject;
+
 
     void Start()
     {
@@ -39,6 +44,11 @@ public class PlayerLight : MonoBehaviour
             isInDark = true;
         }
 
+        if (col.gameObject.tag == "HelmetOff")
+        {
+            helmetObject.SetActive(false);
+        }
+
     }
 
     void OnTriggerExit(Collider col)
@@ -46,6 +56,11 @@ public class PlayerLight : MonoBehaviour
         if (col.gameObject.layer == 10)
         {
             isInDark = false;
+        }
+
+        if (col.gameObject.tag == "HelmetOff")
+        {
+            helmetObject.SetActive(true);
         }
     }
 
