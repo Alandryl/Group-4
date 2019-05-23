@@ -14,6 +14,8 @@ public class DialogueBubble : MonoBehaviour
     public static event ButtonPress OptionB; //our events
     public static event ButtonPress Continue;
 
+    public Color textColor = Color.white;
+
     public string questionText; //input for question
 
     public bool hasAnswers = false; //input for whether the bubble has options or not
@@ -54,6 +56,7 @@ public class DialogueBubble : MonoBehaviour
 
         //sets text of canvas objects to the input text of the "question", and the answers if applicable
         questionTextObject.text = questionText;
+        questionTextObject.color = textColor;
         if (hasAnswers)
         {
             answerTextAObject.text = answerAText;
