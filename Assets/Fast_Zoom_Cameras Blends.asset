@@ -78,8 +78,8 @@ MonoBehaviour:
   - m_From: OutDoors_Camera_Default
     m_To: OutDoors_Camera_Close_Up
     m_Blend:
-      m_Style: 2
-      m_Time: 3
+      m_Style: 6
+      m_Time: 2
       m_CustomCurve:
         serializedVersion: 2
         m_Curve: []
@@ -89,8 +89,8 @@ MonoBehaviour:
   - m_From: OutDoors_Camera_Close_Up
     m_To: OutDoors_Camera_Default
     m_Blend:
-      m_Style: 2
-      m_Time: 3
+      m_Style: 6
+      m_Time: 2
       m_CustomCurve:
         serializedVersion: 2
         m_Curve: []
