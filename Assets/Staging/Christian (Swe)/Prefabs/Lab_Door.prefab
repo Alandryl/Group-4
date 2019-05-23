@@ -19,7 +19,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &7086254298992409535
 Transform:
@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 7086254298992409520}
   m_LocalRotation: {x: 0.00012340446, y: 0.7071068, z: -0.00012340446, w: 0.70710677}
   m_LocalPosition: {x: -46.598, y: 20.67, z: -0.1}
-  m_LocalScale: {x: -100.000046, y: 100, z: 100.00008}
+  m_LocalScale: {x: 100.00009, y: 100, z: 100.000145}
   m_Children:
   - {fileID: 7086254300849341873}
   - {fileID: 7086254300399704708}
@@ -213,15 +213,13 @@ MonoBehaviour:
         actionNames:
         - HutongGames.PlayMaker.Actions.AnimatorPlay
         - HutongGames.PlayMaker.Actions.TriggerEvent
-        - HutongGames.PlayMaker.Actions.Wait
         customNames:
         - 
         - 
-        - 
-        actionEnabled: 010101
-        actionIsOpen: 010101
-        actionStartIndex: 00000000050000000a000000
-        actionHashCodes: c34b41059c51240048c01101
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000005000000
+        actionHashCodes: c34b41059c512400
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -277,12 +275,6 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 10
         fsmIntParams:
         - useVariable: 1
           name: 
@@ -298,13 +290,12 @@ MonoBehaviour:
         fsmQuaternionParams: []
         stringParams:
         - Anim_Close
-        - Anim_Close
-        byteData: 000200000000
+        byteData: 0002000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1400000012000000100000000f0000000100000014000000070000001200000017000000130000000f0000001700000001000000
+        paramDataType: 1400000012000000100000000f000000010000001400000007000000120000001700000013000000
         paramName:
         - gameObject
         - stateName
@@ -316,11 +307,8 @@ MonoBehaviour:
         - collideTag
         - sendEvent
         - storeCollider
-        - time
-        - finishEvent
-        - realTime
-        paramDataPos: 00000000000000000000000000000000000000000100000001000000010000000000000000000000010000000100000005000000
-        paramByteDataSize: 00000000000000000000000000000000010000000000000004000000000000000000000000000000000000000000000001000000
+        paramDataPos: 00000000000000000000000000000000000000000100000001000000010000000000000000000000
+        paramByteDataSize: 00000000000000000000000000000000010000000000000004000000000000000000000000000000
     - name: Animate_Close
       description: 
       colorIndex: 0
@@ -354,15 +342,13 @@ MonoBehaviour:
         actionNames:
         - HutongGames.PlayMaker.Actions.AnimatorPlay
         - HutongGames.PlayMaker.Actions.TriggerEvent
-        - HutongGames.PlayMaker.Actions.Wait
         customNames:
         - 
         - 
-        - 
-        actionEnabled: 010101
-        actionIsOpen: 010101
-        actionStartIndex: 00000000050000000a000000
-        actionHashCodes: c34b41059c51240048c01101
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000005000000
+        actionHashCodes: c34b41059c512400
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -418,12 +404,6 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 10
         fsmIntParams:
         - useVariable: 1
           name: 
@@ -439,13 +419,12 @@ MonoBehaviour:
         fsmQuaternionParams: []
         stringParams:
         - Anim_Open
-        - Anim_Close
-        byteData: 000000000000
+        byteData: 0000000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1400000012000000100000000f0000000100000014000000070000001200000017000000130000000f0000001700000001000000
+        paramDataType: 1400000012000000100000000f000000010000001400000007000000120000001700000013000000
         paramName:
         - gameObject
         - stateName
@@ -457,11 +436,8 @@ MonoBehaviour:
         - collideTag
         - sendEvent
         - storeCollider
-        - time
-        - finishEvent
-        - realTime
-        paramDataPos: 00000000000000000000000000000000000000000100000001000000010000000000000000000000010000000100000005000000
-        paramByteDataSize: 00000000000000000000000000000000010000000000000004000000000000000000000000000000000000000000000001000000
+        paramDataPos: 00000000000000000000000000000000000000000100000001000000010000000000000000000000
+        paramByteDataSize: 00000000000000000000000000000000010000000000000004000000000000000000000000000000
     events:
     - name: Anim_Close
       isSystemEvent: 0
@@ -544,8 +520,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.020038404, y: 0.027628655, z: 0.025075339}
-  m_Center: {x: -0.000057576868, y: 0.011191599, z: 0.14520934}
+  m_Size: {x: 0.020038404, y: 0.027628655, z: 0.02}
+  m_Center: {x: 0, y: 0.0111916, z: 0.125}
 --- !u!95 &7086254298992409532
 Animator:
   serializedVersion: 3
@@ -581,7 +557,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &7086254300399704708
 Transform:
@@ -659,7 +635,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &7086254300849341873
 Transform:
@@ -731,5 +707,5 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.018200006, y: 0.0273, z: 0.0021262027}
-  m_Center: {x: -0.00020979535, y: 0.0102857575, z: 0.14480121}
+  m_Size: {x: 0.018200006, y: 0.025, z: 0.0021262027}
+  m_Center: {x: -0.00020979535, y: 0.0102857575, z: 0.124}
