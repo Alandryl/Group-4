@@ -16,8 +16,13 @@ MonoBehaviour:
   - m_From: OutDoors_Camera_Default
     m_To: OutDoors_Camera_Vista_Static
     m_Blend:
+<<<<<<< HEAD
       m_Style: 2
       m_Time: 8
+=======
+      m_Style: 7
+      m_Time: 15
+>>>>>>> parent of 02a7ec3... Cinematics tweaking
       m_CustomCurve:
         serializedVersion: 2
         m_Curve:
