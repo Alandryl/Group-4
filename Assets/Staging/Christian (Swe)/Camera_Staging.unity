@@ -432,6 +432,7 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: -45.194
 =======
       value: 33.9
@@ -439,10 +440,14 @@ PrefabInstance:
 =======
       value: -45.194
 >>>>>>> parent of d783936... updated camera
+=======
+      value: -45.194
+>>>>>>> parent of bfa37d6... njkj
       objectReference: {fileID: 0}
     - target: {fileID: 3663161269612296811, guid: dfd9b55bd3e300e45bbbfc71ed4dc65b,
         type: 3}
       propertyPath: m_LocalPosition.y
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       value: 20.51
@@ -452,6 +457,9 @@ PrefabInstance:
 =======
       value: 20.51
 >>>>>>> parent of d783936... updated camera
+=======
+      value: 20.51
+>>>>>>> parent of bfa37d6... njkj
       objectReference: {fileID: 0}
     - target: {fileID: 3663161269612296811, guid: dfd9b55bd3e300e45bbbfc71ed4dc65b,
         type: 3}
@@ -587,6 +595,7 @@ PrefabInstance:
       propertyPath: m_LocalRotation.x
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: -0.027615743
 =======
       value: -0.021777984
@@ -594,10 +603,14 @@ PrefabInstance:
 =======
       value: -0.027615743
 >>>>>>> parent of d783936... updated camera
+=======
+      value: -0.027615743
+>>>>>>> parent of bfa37d6... njkj
       objectReference: {fileID: 0}
     - target: {fileID: 4593275931700541307, guid: 8227ea4b0a18f494fb36f5dd06c1c798,
         type: 3}
       propertyPath: m_LocalRotation.y
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       value: -0.22137158
@@ -607,10 +620,14 @@ PrefabInstance:
 =======
       value: -0.22137158
 >>>>>>> parent of d783936... updated camera
+=======
+      value: -0.22137158
+>>>>>>> parent of bfa37d6... njkj
       objectReference: {fileID: 0}
     - target: {fileID: 4593275931700541307, guid: 8227ea4b0a18f494fb36f5dd06c1c798,
         type: 3}
       propertyPath: m_LocalRotation.z
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       value: -0.006271519
@@ -620,10 +637,14 @@ PrefabInstance:
 =======
       value: -0.006271519
 >>>>>>> parent of d783936... updated camera
+=======
+      value: -0.006271519
+>>>>>>> parent of bfa37d6... njkj
       objectReference: {fileID: 0}
     - target: {fileID: 4593275931700541307, guid: 8227ea4b0a18f494fb36f5dd06c1c798,
         type: 3}
       propertyPath: m_LocalRotation.w
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       value: 0.9747783
@@ -633,6 +654,9 @@ PrefabInstance:
 =======
       value: 0.9747783
 >>>>>>> parent of d783936... updated camera
+=======
+      value: 0.9747783
+>>>>>>> parent of bfa37d6... njkj
       objectReference: {fileID: 0}
     - target: {fileID: 4593275931700541307, guid: 8227ea4b0a18f494fb36f5dd06c1c798,
         type: 3}
@@ -661,6 +685,7 @@ PrefabInstance:
       objectReference: {fileID: 1543981771}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     - target: {fileID: 4593275932531695125, guid: 8227ea4b0a18f494fb36f5dd06c1c798,
         type: 3}
@@ -680,6 +705,8 @@ PrefabInstance:
 >>>>>>> parent of 02a7ec3... Cinematics tweaking
 =======
 >>>>>>> parent of d783936... updated camera
+=======
+>>>>>>> parent of bfa37d6... njkj
     - target: {fileID: 4593275932531695130, guid: 8227ea4b0a18f494fb36f5dd06c1c798,
         type: 3}
       propertyPath: m_LookAt
@@ -695,6 +722,7 @@ PrefabInstance:
       propertyPath: m_LocalRotation.y
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: -0.00031732523
 =======
       value: -0.0003173598
@@ -702,10 +730,14 @@ PrefabInstance:
 =======
       value: -0.00031732523
 >>>>>>> parent of d783936... updated camera
+=======
+      value: -0.00031732523
+>>>>>>> parent of bfa37d6... njkj
       objectReference: {fileID: 0}
     - target: {fileID: 4593275931183701332, guid: 8227ea4b0a18f494fb36f5dd06c1c798,
         type: 3}
       propertyPath: m_LocalRotation.z
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       value: 0.0000054746474
@@ -715,6 +747,9 @@ PrefabInstance:
 =======
       value: 0.0000054746474
 >>>>>>> parent of d783936... updated camera
+=======
+      value: 0.0000054746474
+>>>>>>> parent of bfa37d6... njkj
       objectReference: {fileID: 0}
     - target: {fileID: 4593275931183701333, guid: 8227ea4b0a18f494fb36f5dd06c1c798,
         type: 3}
@@ -736,6 +771,7 @@ PrefabInstance:
       propertyPath: m_LocalRotation.x
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: -0.056523018
 =======
       value: 0.0072304667
@@ -748,10 +784,14 @@ PrefabInstance:
 =======
       value: -0.056523018
 >>>>>>> parent of d783936... updated camera
+=======
+      value: -0.056523018
+>>>>>>> parent of bfa37d6... njkj
       objectReference: {fileID: 0}
     - target: {fileID: 5193744160768218655, guid: 8227ea4b0a18f494fb36f5dd06c1c798,
         type: 3}
       propertyPath: m_LocalRotation.z
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       value: -0.024432646
@@ -766,6 +806,9 @@ PrefabInstance:
 =======
       value: -0.024432646
 >>>>>>> parent of d783936... updated camera
+=======
+      value: -0.024432646
+>>>>>>> parent of bfa37d6... njkj
       objectReference: {fileID: 0}
     - target: {fileID: 5913698257465766137, guid: 8227ea4b0a18f494fb36f5dd06c1c798,
         type: 3}
@@ -777,6 +820,7 @@ PrefabInstance:
       propertyPath: m_Follow
       value: 
       objectReference: {fileID: 1543981771}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -803,6 +847,8 @@ PrefabInstance:
 >>>>>>> parent of 02a7ec3... Cinematics tweaking
 =======
 >>>>>>> parent of d783936... updated camera
+=======
+>>>>>>> parent of bfa37d6... njkj
     - target: {fileID: 7031378095963573373, guid: 8227ea4b0a18f494fb36f5dd06c1c798,
         type: 3}
       propertyPath: m_LookAt
