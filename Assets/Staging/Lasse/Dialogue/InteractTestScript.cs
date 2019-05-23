@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class InteractTestScript : MonoBehaviour
 {
+    public bool stopsPlayerMovement = true;
     private GameObject player;
     public GameObject bubbleObject;
     public bool triggersAutomatically;
@@ -97,7 +98,11 @@ public class InteractTestScript : MonoBehaviour
 
     void EnableObjects()
     {
-        player.GetComponent<PlayerMovement>().movementEnabled = false;
+        if (stopsPlayerMovement)
+        {
+            player.GetComponent<PlayerMovement>().movementEnabled = false;
+        }
+        
         foreach (GameObject obj in objectsToEnable)
         {
             obj.SetActive(true);
