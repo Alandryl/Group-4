@@ -87538,22 +87538,38 @@ PrefabInstance:
     - target: {fileID: 4593275931700541307, guid: 8227ea4b0a18f494fb36f5dd06c1c798,
         type: 3}
       propertyPath: m_LocalRotation.x
+<<<<<<< HEAD
       value: -0
+=======
+      value: -0.027615743
+>>>>>>> parent of bfa37d6... njkj
       objectReference: {fileID: 0}
     - target: {fileID: 4593275931700541307, guid: 8227ea4b0a18f494fb36f5dd06c1c798,
         type: 3}
       propertyPath: m_LocalRotation.y
+<<<<<<< HEAD
       value: -0
+=======
+      value: -0.22137155
+>>>>>>> parent of bfa37d6... njkj
       objectReference: {fileID: 0}
     - target: {fileID: 4593275931700541307, guid: 8227ea4b0a18f494fb36f5dd06c1c798,
         type: 3}
       propertyPath: m_LocalRotation.z
+<<<<<<< HEAD
       value: -0
+=======
+      value: -0.0062715183
+>>>>>>> parent of bfa37d6... njkj
       objectReference: {fileID: 0}
     - target: {fileID: 4593275931700541307, guid: 8227ea4b0a18f494fb36f5dd06c1c798,
         type: 3}
       propertyPath: m_LocalRotation.w
+<<<<<<< HEAD
       value: 1
+=======
+      value: 0.9747783
+>>>>>>> parent of bfa37d6... njkj
       objectReference: {fileID: 0}
     - target: {fileID: 4593275931700541307, guid: 8227ea4b0a18f494fb36f5dd06c1c798,
         type: 3}
@@ -87583,7 +87599,11 @@ PrefabInstance:
     - target: {fileID: 4593275932531695125, guid: 8227ea4b0a18f494fb36f5dd06c1c798,
         type: 3}
       propertyPath: m_LocalPosition.z
+<<<<<<< HEAD
       value: -10.030001
+=======
+      value: -5.4700003
+>>>>>>> parent of bfa37d6... njkj
       objectReference: {fileID: 0}
     - target: {fileID: 4593275931183701332, guid: 8227ea4b0a18f494fb36f5dd06c1c798,
         type: 3}
@@ -87635,6 +87655,29 @@ PrefabInstance:
       propertyPath: m_Follow
       value: 
       objectReference: {fileID: 1543981771}
+<<<<<<< HEAD
+=======
+    - target: {fileID: 5193744160768218655, guid: 8227ea4b0a18f494fb36f5dd06c1c798,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -20.535496
+      objectReference: {fileID: 0}
+    - target: {fileID: 8456453186400318124, guid: 8227ea4b0a18f494fb36f5dd06c1c798,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -28.104427
+      objectReference: {fileID: 0}
+    - target: {fileID: 8456453186400318124, guid: 8227ea4b0a18f494fb36f5dd06c1c798,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.7720299
+      objectReference: {fileID: 0}
+    - target: {fileID: 8456453186400318124, guid: 8227ea4b0a18f494fb36f5dd06c1c798,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.24263668
+      objectReference: {fileID: 0}
+>>>>>>> parent of bfa37d6... njkj
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8227ea4b0a18f494fb36f5dd06c1c798, type: 3}
 --- !u!4 &1793640164 stripped
