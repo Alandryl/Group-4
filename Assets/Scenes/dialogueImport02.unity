@@ -1,0 +1,2267 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+OcclusionCullingSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: 0.25
+    backfaceThreshold: 100
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 9
+  m_Fog: 0
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 0
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 9991b6265f7f87d43b7e3c676739f203, type: 2}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_UseRadianceAmbientProbe: 0
+--- !u!157 &3
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 11
+  m_GIWorkflowMode: 1
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 1
+    m_EnableRealtimeLightmaps: 1
+  m_LightmapEditorSettings:
+    serializedVersion: 12
+    m_Resolution: 2
+    m_BakeResolution: 40
+    m_AtlasSize: 1024
+    m_AO: 0
+    m_AOMaxDistance: 1
+    m_CompAOExponent: 1
+    m_CompAOExponentDirect: 0
+    m_ExtractAmbientOcclusion: 0
+    m_Padding: 2
+    m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
+    m_TextureCompression: 1
+    m_FinalGather: 0
+    m_FinalGatherFiltering: 1
+    m_FinalGatherRayCount: 256
+    m_ReflectionCompression: 2
+    m_MixedBakeMode: 2
+    m_BakeBackend: 1
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 512
+    m_PVRBounces: 2
+    m_PVREnvironmentSampleCount: 256
+    m_PVREnvironmentReferencePointCount: 2048
+    m_PVRFilteringMode: 1
+    m_PVRDenoiserTypeDirect: 1
+    m_PVRDenoiserTypeIndirect: 1
+    m_PVRDenoiserTypeAO: 1
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
+    m_PVREnvironmentMIS: 1
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 5
+    m_PVRFilteringGaussRadiusAO: 2
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ShowResolutionOverlay: 1
+    m_ExportTrainingData: 0
+  m_LightingDataAsset: {fileID: 0}
+  m_UseShadowmask: 1
+--- !u!196 &4
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 2
+    agentTypeID: 0
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    minRegionArea: 2
+    manualCellSize: 0
+    cellSize: 0.16666667
+    manualTileSize: 0
+    tileSize: 256
+    accuratePlacement: 0
+    debug:
+      m_Flags: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!4 &14832803 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+    type: 3}
+  m_PrefabInstance: {fileID: 110810479}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &39218657 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+    type: 3}
+  m_PrefabInstance: {fileID: 1779404614}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &57490094
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1197480648103605768, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_Name
+      value: ExitHABDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -13.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 23.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3633688834512430132, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: oneOff
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1980237365260661756, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: questionText
+      value: (x)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1980237365260661756, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: continueBubble
+      value: 
+      objectReference: {fileID: 1313789555}
+    - target: {fileID: 4154112283438645462, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 17.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 4154112283438645462, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 4154112283438645462, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 2.27
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5232e820c28fb844d85313d5a149fd57, type: 3}
+--- !u!1001 &109400489
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1197480648103605768, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_Name
+      value: Cave01Dialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 134.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -22.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3633688834512430132, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: oneOff
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1980237365260661756, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: questionText
+      value: Wow. This is surreal!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1980237365260661756, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: continueBubble
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4154112283438645462, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 5.46
+      objectReference: {fileID: 0}
+    - target: {fileID: 4154112283438645462, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 6.7
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5232e820c28fb844d85313d5a149fd57, type: 3}
+--- !u!1001 &110810479
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1197480648103605768, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_Name
+      value: Artefact speak
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 140
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -23.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3633688834512430132, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: oneOff
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1980237365260661756, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: questionText
+      value: (x)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1980237365260661756, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: continueBubble
+      value: 
+      objectReference: {fileID: 855107573}
+    - target: {fileID: 4154112283438645462, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 3.38
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5232e820c28fb844d85313d5a149fd57, type: 3}
+--- !u!1 &124843964 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+    type: 3}
+  m_PrefabInstance: {fileID: 1498927928}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &134164405 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+    type: 3}
+  m_PrefabInstance: {fileID: 1709062823}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &154666789
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1001082852}
+    m_Modifications:
+    - target: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_Name
+      value: Dialogue Bubble (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796934, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: questionText
+      value: Maybe I'll just wait a minute..
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: hasAnswers
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: answerAText
+      value: yes
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: answerBText
+      value: no
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: bOpensNewDialogue
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fed549c4e142e5a40b75743ea576ac83, type: 3}
+--- !u!1 &180048839 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+    type: 3}
+  m_PrefabInstance: {fileID: 1816054342}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &195319203 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+    type: 3}
+  m_PrefabInstance: {fileID: 57490094}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &243713026 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+    type: 3}
+  m_PrefabInstance: {fileID: 154666789}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &270146370 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+    type: 3}
+  m_PrefabInstance: {fileID: 452082110}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &315473536 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+    type: 3}
+  m_PrefabInstance: {fileID: 1791531050}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &323031358
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 195319203}
+    m_Modifications:
+    - target: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_Name
+      value: Dialogue Bubble (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796934, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: questionText
+      value: Wow.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: continueBubble
+      value: 
+      objectReference: {fileID: 1819190911}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fed549c4e142e5a40b75743ea576ac83, type: 3}
+--- !u!1001 &387147627
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1001082852}
+    m_Modifications:
+    - target: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_Name
+      value: Dialogue Bubble (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796934, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: questionText
+      value: I say let the dead rest, and look forward - Don't know why the ARK found
+        it necessary to send down a whole archeologist - (x)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: hasAnswers
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: answerAText
+      value: yes
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: answerBText
+      value: no
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: bOpensNewDialogue
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: continueBubble
+      value: 
+      objectReference: {fileID: 2125326823}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fed549c4e142e5a40b75743ea576ac83, type: 3}
+--- !u!1001 &436567957
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1001082852}
+    m_Modifications:
+    - target: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_Name
+      value: Dialogue Bubble (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796934, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: questionText
+      value: Like an old, smelly glove. (x)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: continueBubble
+      value: 
+      objectReference: {fileID: 2013930080}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fed549c4e142e5a40b75743ea576ac83, type: 3}
+--- !u!1001 &451530294
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 14832803}
+    m_Modifications:
+    - target: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_Name
+      value: Dialogue Bubble (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796934, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: questionText
+      value: Inspect strange artefact?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: aOpensNewDialogue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: answerBText
+      value: no
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: answerAText
+      value: yes
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: aDialogueBubble
+      value: 
+      objectReference: {fileID: 1895913159}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: hasAnswers
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fed549c4e142e5a40b75743ea576ac83, type: 3}
+--- !u!1001 &452082110
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1001082852}
+    m_Modifications:
+    - target: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_Name
+      value: Dialogue Bubble (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796934, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: questionText
+      value: Is what?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: hasAnswers
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: answerAText
+      value: yes
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: answerBText
+      value: no
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: bOpensNewDialogue
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: continueBubble
+      value: 
+      objectReference: {fileID: 600567941}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fed549c4e142e5a40b75743ea576ac83, type: 3}
+--- !u!1 &600567941 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+    type: 3}
+  m_PrefabInstance: {fileID: 905995071}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &695507053
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 14832803}
+    m_Modifications:
+    - target: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_Name
+      value: Dialogue Bubble (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796934, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: questionText
+      value: black out!!!!!
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fed549c4e142e5a40b75743ea576ac83, type: 3}
+--- !u!1 &720300132 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+    type: 3}
+  m_PrefabInstance: {fileID: 1089119762}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &736598912 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+    type: 3}
+  m_PrefabInstance: {fileID: 1178107210}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &803708570 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+    type: 3}
+  m_PrefabInstance: {fileID: 916077596}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &855107573 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+    type: 3}
+  m_PrefabInstance: {fileID: 451530294}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &883706844
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1001082852}
+    m_Modifications:
+    - target: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_Name
+      value: Dialogue Bubble (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796934, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: questionText
+      value: Well, I thought historical artefacts were your speciality (x)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: continueBubble
+      value: 
+      objectReference: {fileID: 2065169811}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fed549c4e142e5a40b75743ea576ac83, type: 3}
+--- !u!1001 &905995071
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1001082852}
+    m_Modifications:
+    - target: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_Name
+      value: Dialogue Bubble (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796934, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: questionText
+      value: Nevermind.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: hasAnswers
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: answerAText
+      value: yes
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: answerBText
+      value: no
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: bOpensNewDialogue
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: continueBubble
+      value: 
+      objectReference: {fileID: 2061241785}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fed549c4e142e5a40b75743ea576ac83, type: 3}
+--- !u!1001 &916077596
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1197480648103605768, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_Name
+      value: Vista spea
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 66.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.69
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3633688834512430132, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: oneOff
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1980237365260661756, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: questionText
+      value: That thing. (x)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1980237365260661756, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: continueBubble
+      value: 
+      objectReference: {fileID: 315473536}
+    - target: {fileID: 4154112283438645462, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 3.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4154112283438645462, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 11.33
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5232e820c28fb844d85313d5a149fd57, type: 3}
+--- !u!1001 &974264654
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1197480648103605768, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_Name
+      value: PostRavineJumpdialog
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 33.93
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3633688834512430132, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: oneOff
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1980237365260661756, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: questionText
+      value: No turning back now!
+      objectReference: {fileID: 0}
+    - target: {fileID: 4154112283438645462, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 5.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 4154112283438645462, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 5.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 1980237364212546413, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5232e820c28fb844d85313d5a149fd57, type: 3}
+--- !u!1001 &989406792
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 195319203}
+    m_Modifications:
+    - target: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_Name
+      value: Dialogue Bubble (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796934, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: questionText
+      value: OKay E, take a step.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: continueBubble
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fed549c4e142e5a40b75743ea576ac83, type: 3}
+--- !u!4 &1001082852 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+    type: 3}
+  m_PrefabInstance: {fileID: 1247221643}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1025639371
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1001082852}
+    m_Modifications:
+    - target: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_Name
+      value: Dialogue Bubble (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796934, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: questionText
+      value: "Sure - I\u2019ll try to stay out of trouble. Thanks Cat."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: hasAnswers
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: answerAText
+      value: yes
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: answerBText
+      value: no
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: bOpensNewDialogue
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: continueBubble
+      value: 
+      objectReference: {fileID: 1202448277}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fed549c4e142e5a40b75743ea576ac83, type: 3}
+--- !u!1001 &1054180241
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1001082852}
+    m_Modifications:
+    - target: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_Name
+      value: Dialogue Bubble (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796934, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: questionText
+      value: Speak with Cat and Mel?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: hasAnswers
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: answerAText
+      value: yes
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: answerBText
+      value: no
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: bOpensNewDialogue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: bDialogueBubble
+      value: 
+      objectReference: {fileID: 243713026}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: aOpensNewDialogue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: aDialogueBubble
+      value: 
+      objectReference: {fileID: 1270481655}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fed549c4e142e5a40b75743ea576ac83, type: 3}
+--- !u!1001 &1060093578
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1001082852}
+    m_Modifications:
+    - target: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_Name
+      value: Dialogue Bubble (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796934, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: questionText
+      value: "I do envy you slightly, though. It\u2019s the great wild, Eve. True
+        nature."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: hasAnswers
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: answerAText
+      value: yes
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: answerBText
+      value: no
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: bOpensNewDialogue
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: continueBubble
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fed549c4e142e5a40b75743ea576ac83, type: 3}
+--- !u!1001 &1087317086
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1001082852}
+    m_Modifications:
+    - target: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_Name
+      value: Dialogue Bubble (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796934, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: questionText
+      value: "Yearh - try to stay safe, is what I mean. We\u2019ll be near the radio
+        if you need support from the ARK, but, you know."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: hasAnswers
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: answerAText
+      value: yes
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: answerBText
+      value: no
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: bOpensNewDialogue
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: continueBubble
+      value: 
+      objectReference: {fileID: 1401002663}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fed549c4e142e5a40b75743ea576ac83, type: 3}
+--- !u!1001 &1089119762
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1001082852}
+    m_Modifications:
+    - target: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_Name
+      value: Dialogue Bubble (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796934, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: questionText
+      value: Maybe?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: hasAnswers
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: answerAText
+      value: yes
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: answerBText
+      value: no
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: bOpensNewDialogue
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: continueBubble
+      value: 
+      objectReference: {fileID: 39218657}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fed549c4e142e5a40b75743ea576ac83, type: 3}
+--- !u!1001 &1135646557
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1001082852}
+    m_Modifications:
+    - target: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_Name
+      value: Dialogue Bubble (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796934, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: questionText
+      value: Alrighty then. Time for the leap of faith?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: hasAnswers
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: answerAText
+      value: yes
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: answerBText
+      value: no
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: bOpensNewDialogue
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: continueBubble
+      value: 
+      objectReference: {fileID: 1307863695}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fed549c4e142e5a40b75743ea576ac83, type: 3}
+--- !u!1 &1147602165 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+    type: 3}
+  m_PrefabInstance: {fileID: 436567957}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1178107210
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1001082852}
+    m_Modifications:
+    - target: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_Name
+      value: Dialogue Bubble (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796934, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: questionText
+      value: Today we'll probably confirm that our new homeplanet was already used
+        by someone else as well. (x)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: hasAnswers
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: answerAText
+      value: yes
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: answerBText
+      value: no
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: bOpensNewDialogue
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: continueBubble
+      value: 
+      objectReference: {fileID: 1341487759}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fed549c4e142e5a40b75743ea576ac83, type: 3}
+--- !u!1 &1202448277 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+    type: 3}
+  m_PrefabInstance: {fileID: 1060093578}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1217098859
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1001082852}
+    m_Modifications:
+    - target: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_Name
+      value: Dialogue Bubble (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796934, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: questionText
+      value: "You\u2019ll be alone out there."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: hasAnswers
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: answerAText
+      value: yes
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: answerBText
+      value: no
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: bOpensNewDialogue
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: continueBubble
+      value: 
+      objectReference: {fileID: 1996798431}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fed549c4e142e5a40b75743ea576ac83, type: 3}
+--- !u!1001 &1247221643
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1197480648103605768, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_Name
+      value: LABSpeak
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -25.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 21.814
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.7232183
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 71532046189102601, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1980237365260661756, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: questionText
+      value: (x)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1980237365260661756, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: continueBubble
+      value: 
+      objectReference: {fileID: 1308919884}
+    - target: {fileID: 4154112283438645462, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 5.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 4154112283438645462, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 6.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4154112283438645462, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 15.51
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5232e820c28fb844d85313d5a149fd57, type: 3}
+--- !u!1 &1252176779 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+    type: 3}
+  m_PrefabInstance: {fileID: 1135646557}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1270481655 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+    type: 3}
+  m_PrefabInstance: {fileID: 1327973749}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1307863695 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+    type: 3}
+  m_PrefabInstance: {fileID: 1217098859}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1308919884 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+    type: 3}
+  m_PrefabInstance: {fileID: 1054180241}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1313789555 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+    type: 3}
+  m_PrefabInstance: {fileID: 323031358}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1327973749
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1001082852}
+    m_Modifications:
+    - target: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_Name
+      value: Dialogue Bubble (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796934, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: questionText
+      value: How does it fit? (x)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: continueBubble
+      value: 
+      objectReference: {fileID: 1147602165}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fed549c4e142e5a40b75743ea576ac83, type: 3}
+--- !u!1 &1341487759 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+    type: 3}
+  m_PrefabInstance: {fileID: 387147627}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1401002663 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+    type: 3}
+  m_PrefabInstance: {fileID: 1025639371}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1450033410
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1001082852}
+    m_Modifications:
+    - target: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_Name
+      value: Dialogue Bubble (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796934, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: questionText
+      value: Legacy's atmosphere has been shown to be safe for humans, but we better
+        be precautious for a little longer. (x)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: hasAnswers
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: answerAText
+      value: yes
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: answerBText
+      value: no
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: bOpensNewDialogue
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: continueBubble
+      value: 
+      objectReference: {fileID: 180048839}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fed549c4e142e5a40b75743ea576ac83, type: 3}
+--- !u!1001 &1498927928
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 803708570}
+    m_Modifications:
+    - target: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_Name
+      value: Dialogue Bubble (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796934, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: continueBubble
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: questionText
+      value: '"Is it...still growing?" (X)'
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fed549c4e142e5a40b75743ea576ac83, type: 3}
+--- !u!1001 &1579927731
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1001082852}
+    m_Modifications:
+    - target: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_Name
+      value: Dialogue Bubble (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796934, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: questionText
+      value: As long as it's functional, that's what's important. (x)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: hasAnswers
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: answerAText
+      value: yes
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: answerBText
+      value: no
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: bOpensNewDialogue
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: continueBubble
+      value: 
+      objectReference: {fileID: 2137479315}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fed549c4e142e5a40b75743ea576ac83, type: 3}
+--- !u!1001 &1709062823
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1001082852}
+    m_Modifications:
+    - target: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_Name
+      value: Dialogue Bubble (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796934, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: questionText
+      value: "Three for now, but they\u2019ll probably find more as they patrol. They
+        should be on your map - the closest one is only a moment away from the station."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: hasAnswers
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: answerAText
+      value: yes
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: answerBText
+      value: no
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: bOpensNewDialogue
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: continueBubble
+      value: 
+      objectReference: {fileID: 1252176779}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fed549c4e142e5a40b75743ea576ac83, type: 3}
+--- !u!1001 &1779404614
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1001082852}
+    m_Modifications:
+    - target: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_Name
+      value: Dialogue Bubble (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796934, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: questionText
+      value: Humanity must feel destined to recycle old suits and ressources forever
+        - (x)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: hasAnswers
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: answerAText
+      value: yes
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: answerBText
+      value: no
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: bOpensNewDialogue
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: continueBubble
+      value: 
+      objectReference: {fileID: 736598912}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fed549c4e142e5a40b75743ea576ac83, type: 3}
+--- !u!1001 &1791531050
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 803708570}
+    m_Modifications:
+    - target: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_Name
+      value: Dialogue Bubble (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796934, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: continueBubble
+      value: 
+      objectReference: {fileID: 124843964}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: questionText
+      value: That's what they're here for. Were fungi ever that large on earth?' (X)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fed549c4e142e5a40b75743ea576ac83, type: 3}
+--- !u!1001 &1816054342
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1001082852}
+    m_Modifications:
+    - target: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_Name
+      value: Dialogue Bubble (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796934, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: questionText
+      value: Ready? (x)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: hasAnswers
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: answerAText
+      value: yes
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: answerBText
+      value: no
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: bOpensNewDialogue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: continueBubble
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: bDialogueBubble
+      value: 
+      objectReference: {fileID: 243713026}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: aOpensNewDialogue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: aDialogueBubble
+      value: 
+      objectReference: {fileID: 720300132}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fed549c4e142e5a40b75743ea576ac83, type: 3}
+--- !u!1 &1819190911 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+    type: 3}
+  m_PrefabInstance: {fileID: 989406792}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1895913159 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+    type: 3}
+  m_PrefabInstance: {fileID: 695507053}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1995370307
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1001082852}
+    m_Modifications:
+    - target: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_Name
+      value: Dialogue Bubble (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796934, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: questionText
+      value: Even if that person is...
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: hasAnswers
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: answerAText
+      value: yes
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: answerBText
+      value: no
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: bOpensNewDialogue
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: continueBubble
+      value: 
+      objectReference: {fileID: 270146370}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fed549c4e142e5a40b75743ea576ac83, type: 3}
+--- !u!1 &1996798431 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+    type: 3}
+  m_PrefabInstance: {fileID: 1087317086}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2013930080 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+    type: 3}
+  m_PrefabInstance: {fileID: 883706844}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2061241785 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+    type: 3}
+  m_PrefabInstance: {fileID: 2107954449}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2065169811 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+    type: 3}
+  m_PrefabInstance: {fileID: 1579927731}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2107954449
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1001082852}
+    m_Modifications:
+    - target: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_Name
+      value: Dialogue Bubble (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796934, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: questionText
+      value: How many sightings were there?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: hasAnswers
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: answerAText
+      value: yes
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: answerBText
+      value: no
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: bOpensNewDialogue
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: continueBubble
+      value: 
+      objectReference: {fileID: 134164405}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fed549c4e142e5a40b75743ea576ac83, type: 3}
+--- !u!1 &2125326823 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+    type: 3}
+  m_PrefabInstance: {fileID: 1995370307}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2137479315 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+    type: 3}
+  m_PrefabInstance: {fileID: 1450033410}
+  m_PrefabAsset: {fileID: 0}
