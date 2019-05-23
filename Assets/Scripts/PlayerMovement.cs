@@ -99,7 +99,6 @@ public class PlayerMovement : MonoBehaviour
                 rb.AddForce(new Vector3(0, jumpHeight, 0));
                 audioSource.PlayOneShot(audioJump);
                 jumpCooldownCounter = jumpCooldown;
-                landingEffect.GetComponent<ParticleSystem>().Play();
             }
 
             if (canDoubleJump && !grounded && jumpCooldownCounter <= 0f && doubleJumpUnlocked)
