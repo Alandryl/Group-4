@@ -40130,6 +40130,16 @@ PrefabInstance:
       propertyPath: continueBubble
       value: 
       objectReference: {fileID: 1248961727}
+    - target: {fileID: 1053921495373962921, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1053921495373962921, guid: 5232e820c28fb844d85313d5a149fd57,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5232e820c28fb844d85313d5a149fd57, type: 3}
 --- !u!1 &900428204
