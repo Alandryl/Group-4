@@ -7,6 +7,8 @@ public class PlayerMovement : MonoBehaviour
 
     AudioSource audioSource;
     Rigidbody rb;
+    public GameManager gameManager;
+
     public Animator ac;
     public GameObject model;
 
@@ -17,7 +19,6 @@ public class PlayerMovement : MonoBehaviour
     [Header("Movement")]
 
     public bool movementEnabled = true;
-
     public float runSpeed = 4;
     bool facingRight;
     public float jumpHeight = 500;
@@ -33,6 +34,10 @@ public class PlayerMovement : MonoBehaviour
     Collider[] groundCollisions;
     float groundCheckRadius = 0.2f;
 
+    [Header("Falling")]
+    public float airTime;
+    public float hardLanding = 1f;
+    public float deathFallTime = 3f;
 
     [Header("Double Jump")]
 
@@ -60,12 +65,14 @@ public class PlayerMovement : MonoBehaviour
     public GameObject doubleJumpEffect;
     public GameObject dashEffect;
     public GameObject landingEffect;
+    public GameObject hardLandingEffect;
 
 
     //public float slopeSlidingForce = 100;
 
     void Start()
     {
+        gameManager = GameObject.FindObjectOfType<GameManager>();
         audioSource = GetComponent<AudioSource>();
         rb = GetComponent<Rigidbody>();
         ac = model.GetComponent<Animator>();
@@ -86,7 +93,14 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = new Vector3(move * runSpeed, rb.velocity.y, 0);
         }
 
-        ac.SetFloat("Speed", Mathf.Abs(move));
+        if (movementEnabled)
+        {
+            ac.SetFloat("Speed", Mathf.Abs(move));
+        }
+        else
+        {
+            ac.SetFloat("Speed", 0);
+        }
 
         //Jumping
 
@@ -185,35 +199,68 @@ public class PlayerMovement : MonoBehaviour
             jumpCooldownCounter -= Time.deltaTime;
         }
 
-    }
-
-    void FixedUpdate()
-    {
-        //Animation Speed
-
-        ac.speed = runSpeed / 4;
-
-
         //Grounded
 
         groundCollisions = Physics.OverlapSphere(groundCheck.position, groundCheckRadius, groundLayer);
-        if (groundCollisions.Length > 0 && jumpCooldownCounter <= 0f)
-        {
-            if (!grounded && rb.velocity.y < -5f)
-            {
-                landingEffect.GetComponent<ParticleSystem>().Play();
-                audioSource.PlayOneShot(audioLanding);
-            }
 
-            grounded = true;
-            canDoubleJump = true;
+        if (groundCollisions.Length > 0)
+        {
+            if (!grounded)
+            {
+                if (airTime >= hardLanding * 0.5f && airTime < hardLanding)
+                {
+                    landingEffect.GetComponent<ParticleSystem>().Play();
+                    audioSource.PlayOneShot(audioLanding);
+                }
+
+                if (airTime >= hardLanding && airTime < deathFallTime)
+                {
+                    hardLandingEffect.GetComponent<ParticleSystem>().Play();
+                    audioSource.PlayOneShot(audioLanding);
+                    ac.SetTrigger("landing");
+                    rb.velocity = Vector3.zero;
+                    StartCoroutine(HardLanding());
+                }
+
+                if (airTime >= deathFallTime)
+                {
+                    hardLandingEffect.GetComponent<ParticleSystem>().Play();
+                    audioSource.PlayOneShot(audioLanding);
+                    movementEnabled = false;
+                    rb.velocity = Vector3.zero;
+                    Death();
+                }
+
+                grounded = true;
+                canDoubleJump = true;
+            }
         }
+
         else
         {
             grounded = false;
         }
 
         ac.SetBool("Grounded", grounded);
+
+    }
+
+    void FixedUpdate()
+    {
+        //Falling
+
+        if (!grounded && rb.velocity.y < 0)
+        {
+            airTime += Time.deltaTime;
+        }
+        if (grounded || rb.velocity.y >= 0)
+        {
+            airTime = 0f;
+        }
+
+        //Animation Speed
+
+        ac.speed = runSpeed / 4;
 
 
         //Sliding
@@ -292,4 +339,16 @@ public class PlayerMovement : MonoBehaviour
         audioSource.PlayOneShot(audioFootstep);
     }
 
+    IEnumerator HardLanding()
+    {
+        movementEnabled = false;
+        yield return new WaitForSeconds(1);
+        movementEnabled = true;
+    }
+
+    void Death()
+    {
+        ac.SetTrigger("lyingDown");
+        gameManager.Death();
+    }
 }
