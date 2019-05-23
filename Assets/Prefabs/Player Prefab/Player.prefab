@@ -24366,7 +24366,7 @@ MonoBehaviour:
   darkLayer:
     serializedVersion: 2
     m_Bits: 1024
-  helmetObject: {fileID: 0}
+  helmetObject: {fileID: 3262710386910544467}
 --- !u!1 &3666249114489327242
 GameObject:
   m_ObjectHideFlags: 0
@@ -44055,6 +44055,12 @@ PrefabInstance:
 --- !u!1 &6450904650301010008 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: fdb4106fae28115469ca2eb483cb1920,
+    type: 3}
+  m_PrefabInstance: {fileID: 3073665580819294545}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3262710386910544467 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -8655738984240780542, guid: fdb4106fae28115469ca2eb483cb1920,
     type: 3}
   m_PrefabInstance: {fileID: 3073665580819294545}
   m_PrefabAsset: {fileID: 0}
