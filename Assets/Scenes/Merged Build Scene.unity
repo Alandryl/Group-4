@@ -87540,6 +87540,7 @@ PrefabInstance:
       propertyPath: m_LocalRotation.x
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: -0
 =======
       value: -0.027615743
@@ -87547,12 +87548,16 @@ PrefabInstance:
 =======
       value: -0.027615743
 >>>>>>> parent of bfa37d6... njkj
+=======
+      value: -0
+>>>>>>> parent of 4e97f72... nm
       objectReference: {fileID: 0}
     - target: {fileID: 4593275931700541307, guid: 8227ea4b0a18f494fb36f5dd06c1c798,
         type: 3}
       propertyPath: m_LocalRotation.y
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: -0
 =======
       value: -0.22137155
@@ -87560,12 +87565,16 @@ PrefabInstance:
 =======
       value: -0.22137155
 >>>>>>> parent of bfa37d6... njkj
+=======
+      value: -0
+>>>>>>> parent of 4e97f72... nm
       objectReference: {fileID: 0}
     - target: {fileID: 4593275931700541307, guid: 8227ea4b0a18f494fb36f5dd06c1c798,
         type: 3}
       propertyPath: m_LocalRotation.z
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: -0
 =======
       value: -0.0062715183
@@ -87573,10 +87582,14 @@ PrefabInstance:
 =======
       value: -0.0062715183
 >>>>>>> parent of bfa37d6... njkj
+=======
+      value: -0
+>>>>>>> parent of 4e97f72... nm
       objectReference: {fileID: 0}
     - target: {fileID: 4593275931700541307, guid: 8227ea4b0a18f494fb36f5dd06c1c798,
         type: 3}
       propertyPath: m_LocalRotation.w
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       value: 1
@@ -87586,6 +87599,9 @@ PrefabInstance:
 =======
       value: 0.9747783
 >>>>>>> parent of bfa37d6... njkj
+=======
+      value: 1
+>>>>>>> parent of 4e97f72... nm
       objectReference: {fileID: 0}
     - target: {fileID: 4593275931700541307, guid: 8227ea4b0a18f494fb36f5dd06c1c798,
         type: 3}
@@ -87617,6 +87633,7 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: -10.030001
 =======
       value: -5.4700003
@@ -87624,6 +87641,9 @@ PrefabInstance:
 =======
       value: -5.4700003
 >>>>>>> parent of bfa37d6... njkj
+=======
+      value: -10.030001
+>>>>>>> parent of 4e97f72... nm
       objectReference: {fileID: 0}
     - target: {fileID: 4593275931183701332, guid: 8227ea4b0a18f494fb36f5dd06c1c798,
         type: 3}
@@ -87677,6 +87697,7 @@ PrefabInstance:
       objectReference: {fileID: 1543981771}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> parent of bfa37d6... njkj
@@ -87704,6 +87725,8 @@ PrefabInstance:
 >>>>>>> parent of bfa37d6... njkj
 =======
 >>>>>>> parent of bfa37d6... njkj
+=======
+>>>>>>> parent of 4e97f72... nm
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8227ea4b0a18f494fb36f5dd06c1c798, type: 3}
 --- !u!4 &1793640164 stripped
