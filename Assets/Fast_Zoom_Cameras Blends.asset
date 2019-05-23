@@ -17,12 +17,17 @@ MonoBehaviour:
     m_To: OutDoors_Camera_Vista_Static
     m_Blend:
 <<<<<<< HEAD
+<<<<<<< HEAD
       m_Style: 2
       m_Time: 8
 =======
       m_Style: 7
       m_Time: 15
 >>>>>>> parent of 02a7ec3... Cinematics tweaking
+=======
+      m_Style: 2
+      m_Time: 8
+>>>>>>> parent of d783936... updated camera
       m_CustomCurve:
         serializedVersion: 2
         m_Curve:
