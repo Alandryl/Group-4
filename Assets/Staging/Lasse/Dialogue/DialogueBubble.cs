@@ -6,11 +6,15 @@ using UnityEngine.UI;
 
 public class DialogueBubble : MonoBehaviour
 {
+    private GameObject player;
+    private PlayerMovement playerMovement;
 
     public delegate void ButtonPress(); //delegate , i dont really understand it, but its basically something that calls a series of functions
     public static event ButtonPress OptionA;
     public static event ButtonPress OptionB; //our events
     public static event ButtonPress Continue;
+
+    public Color textColor = Color.white;
 
     public string questionText; //input for question
 
@@ -44,12 +48,15 @@ public class DialogueBubble : MonoBehaviour
 
     void Start()
     {
+        player = GameObject.FindWithTag("Player");
+        playerMovement = player.GetComponent<PlayerMovement>();
         //sets positions of arrow to the position the text objects in the y and z axis
         indicatorAPosition = new Vector3(indicator.transform.position.x, answerTextAObject.transform.position.y, answerTextAObject.transform.position.z);
         indicatorBPosition = new Vector3(indicator.transform.position.x, answerTextBObject.transform.position.y, answerTextBObject.transform.position.z);
 
         //sets text of canvas objects to the input text of the "question", and the answers if applicable
         questionTextObject.text = questionText;
+        questionTextObject.color = textColor;
         if (hasAnswers)
         {
             answerTextAObject.text = answerAText;
@@ -130,6 +137,7 @@ public class DialogueBubble : MonoBehaviour
                     
                     hasZeroed = false;
                     gameObject.SetActive(false);
+                    playerMovement.movementEnabled = true;
                 }
                 else
                 {
@@ -153,6 +161,7 @@ public class DialogueBubble : MonoBehaviour
                                 
 
                             }
+                            playerMovement.movementEnabled = true;
                             gameObject.SetActive(false);
                         }
 
@@ -177,6 +186,7 @@ public class DialogueBubble : MonoBehaviour
                                 OptionB();
                                 
                             }
+                            playerMovement.movementEnabled = true;
                             gameObject.SetActive(false);
                         }
 

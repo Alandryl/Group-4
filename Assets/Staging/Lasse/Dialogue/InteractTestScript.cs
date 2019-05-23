@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class InteractTestScript : MonoBehaviour
 {
+    public bool stopsPlayerMovement = true;
+    private GameObject player;
     public GameObject bubbleObject;
     public bool triggersAutomatically;
     public bool oneOff = false;
@@ -16,6 +18,10 @@ public class InteractTestScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        if (other.tag == "Player")
+        {
+            player = other.gameObject;
+        }
         if (other.tag == "Player" && !hasSubmitted )
         {
             if (!triggersAutomatically)
@@ -43,7 +49,9 @@ public class InteractTestScript : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            objectsToEnable[0].transform.position = new Vector3(other.transform.position.x, other.transform.position.y+2.5f, other.transform.position.z);
+            objectsToEnable[0].transform.position = new Vector3(other.transform.position.x, other.transform.position.y +2f- Camera.main.transform.position.z*0.1f, other.transform.position.z);
+            objectsToEnable[0].transform.localScale = new Vector3 ( -Camera.main.transform.position.z*0.1f, -Camera.main.transform.position.z * 0.1f, -Camera.main.transform.position.z * 0.1f);
+
             if (bubbleObject != null)
             {
                 bubbleObject.transform.position = new Vector3(other.transform.position.x, other.transform.position.y + 2.5f, other.transform.position.z);
@@ -90,6 +98,11 @@ public class InteractTestScript : MonoBehaviour
 
     void EnableObjects()
     {
+        if (stopsPlayerMovement)
+        {
+            player.GetComponent<PlayerMovement>().movementEnabled = false;
+        }
+        
         foreach (GameObject obj in objectsToEnable)
         {
             obj.SetActive(true);
@@ -98,6 +111,7 @@ public class InteractTestScript : MonoBehaviour
 
     void DisableObjects()
     {
+        player.GetComponent<PlayerMovement>().movementEnabled = true;
         foreach (GameObject obj in objectsToEnable)
         {
             obj.SetActive(false);
