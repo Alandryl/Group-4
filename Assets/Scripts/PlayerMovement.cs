@@ -247,6 +247,13 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
+        //Movement Enabled
+
+        if (!movementEnabled)
+        {
+            rb.velocity = Vector3.zero;
+        }
+
         //Falling
 
         if (!grounded && rb.velocity.y < 0)
