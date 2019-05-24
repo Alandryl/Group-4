@@ -4,21 +4,35 @@ using UnityEngine;
 
 public class MusicPlayer : MonoBehaviour
 {
-    public AudioSource audioSource;
+
+    [Header("Music")]
+    public AudioSource audioSourceMusic;
+    public AudioClip currentMusic;
 
     [Range(0f, 1f)]
-    public float audioVolume = 1;
-
-    public AudioClip currentTrack;
+    public float audioVolumeMusic = 1;
 
     public bool fadeMusic;
 
+    [Header("Ambience")]
+    public AudioSource audioSourceAmbience;
+    public AudioClip currentAmbience;
+
+    [Range(0f, 1f)]
+    public float audioVolumeAmbience = 1;
+
+    public bool fadeAmbience;
+
+
     void Start()
     {
-        audioSource = GetComponent<AudioSource>();
-        audioSource.volume = audioVolume;
-        audioSource.clip = currentTrack;
-        audioSource.Play();
+        audioSourceMusic.volume = audioVolumeMusic;
+        audioSourceMusic.clip = currentMusic;
+        audioSourceMusic.Play();
+
+        audioSourceAmbience.volume = audioVolumeAmbience;
+        audioSourceAmbience.clip = currentAmbience;
+        audioSourceAmbience.Play();
     }
 
     void Update()
@@ -30,28 +44,51 @@ public class MusicPlayer : MonoBehaviour
     {
         if (fadeMusic)
         {
-            if (audioSource.volume > 0)
+            if (audioSourceMusic.volume > 0)
             {
-                audioSource.volume -= Time.deltaTime;
+                audioSourceMusic.volume -= Time.deltaTime;
             }
         }
-        else
-            if (audioSource.volume < audioVolume)
+        else if (audioSourceMusic.volume < audioVolumeMusic)
+        {
+            audioSourceMusic.volume += Time.deltaTime;
+
+        }
+
+        if (fadeAmbience)
+        {
+            if (audioSourceAmbience.volume > 0)
             {
-                audioSource.volume += Time.deltaTime;                
+                audioSourceAmbience.volume -= Time.deltaTime;
             }
+        }
+        else if (audioSourceAmbience.volume < audioVolumeAmbience)
+        {
+            audioSourceAmbience.volume += Time.deltaTime;
+        }
     }
 
-    public IEnumerator ChangeTrack()
+    public IEnumerator ChangeMusic()
     {
-        Debug.Log("WOrks");
         fadeMusic = true;
 
         yield return new WaitForSeconds(1f);
-        audioSource.clip = currentTrack;
+        audioSourceMusic.clip = currentMusic;
 
         fadeMusic = false;
-        audioSource.Play();
+        audioSourceMusic.Play();
+
+    }
+
+    public IEnumerator ChangeAmbience()
+    {
+        fadeAmbience = true;
+
+        yield return new WaitForSeconds(1f);
+        audioSourceAmbience.clip = currentAmbience;
+
+        fadeAmbience = false;
+        audioSourceAmbience.Play();
 
     }
 
