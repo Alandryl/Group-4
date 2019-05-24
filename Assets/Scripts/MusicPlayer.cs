@@ -46,7 +46,7 @@ public class MusicPlayer : MonoBehaviour
         {
             if (audioSourceMusic.volume > 0)
             {
-                audioSourceMusic.volume -= Time.deltaTime * 0.5f;
+                audioSourceMusic.volume -= Time.deltaTime;
             }
         }
         else if (audioSourceMusic.volume < audioVolumeMusic)
@@ -59,7 +59,7 @@ public class MusicPlayer : MonoBehaviour
         {
             if (audioSourceAmbience.volume > 0)
             {
-                audioSourceAmbience.volume -= Time.deltaTime * 0.5f;
+                audioSourceAmbience.volume -= Time.deltaTime;
             }
         }
         else if (audioSourceAmbience.volume < audioVolumeAmbience)

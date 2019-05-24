@@ -1,5 +1,49 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &194883713
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 194883714}
+  - component: {fileID: 194883715}
+  m_Layer: 0
+  m_Name: Activate
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &194883714
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 194883713}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 71532046189102601}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &194883715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 194883713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ed527caf3dc7254287e04cf86e891ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ArtifactEvent: {fileID: 0}
 --- !u!1 &375683942180780133
 GameObject:
   m_ObjectHideFlags: 0
@@ -109,7 +153,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1980237365260661757}
+  - {fileID: 7675511871394694414}
   - {fileID: 1053921495373962921}
+  - {fileID: 194883714}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -124,7 +170,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 6.91, y: 3.68, z: 2.27}
+  m_Size: {x: 2.02, y: 2.14, z: 2.27}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &3633688834512430132
 MonoBehaviour:
@@ -140,10 +186,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stopsPlayerMovement: 1
   bubbleObject: {fileID: 0}
-  triggersAutomatically: 1
+  triggersAutomatically: 0
   oneOff: 1
   objectsToEnable:
-  - {fileID: 1980237365260661745}
+  - {fileID: 7675511871394694402}
+  - {fileID: 194883713}
   xIndicator: {fileID: 0}
 --- !u!1 &1911351320254393258
 GameObject:
@@ -177,7 +224,7 @@ RectTransform:
   m_Children:
   - {fileID: 3494644196858750609}
   m_Father: {fileID: 71532046189102601}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -244,6 +291,77 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!1001 &1217628104
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 71532046189102601}
+    m_Modifications:
+    - target: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_Name
+      value: Dialogue Bubble (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796934, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: questionText
+      value: What's this..?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: aOpensNewDialogue
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: answerBText
+      value: no
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: answerAText
+      value: yes
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: aDialogueBubble
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: hasAnswers
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: continueBubble
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fed549c4e142e5a40b75743ea576ac83, type: 3}
+--- !u!1 &7675511871394694402 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
+    type: 3}
+  m_PrefabInstance: {fileID: 1217628104}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &7675511871394694414 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7675511870447796934, guid: fed549c4e142e5a40b75743ea576ac83,
+    type: 3}
+  m_PrefabInstance: {fileID: 1217628104}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8214515166344442171
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -369,7 +487,7 @@ PrefabInstance:
     - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
         type: 3}
       propertyPath: questionText
-      value: This jungle sure looks dense, I wonder what's hiding in these trees
+      value: (x)
       objectReference: {fileID: 0}
     - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
         type: 3}
@@ -381,14 +499,13 @@ PrefabInstance:
       propertyPath: answerBText
       value: b
       objectReference: {fileID: 0}
+    - target: {fileID: 7675511870447796935, guid: fed549c4e142e5a40b75743ea576ac83,
+        type: 3}
+      propertyPath: continueBubble
+      value: 
+      objectReference: {fileID: 7675511871394694402}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fed549c4e142e5a40b75743ea576ac83, type: 3}
---- !u!1 &1980237365260661745 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7675511870447796938, guid: fed549c4e142e5a40b75743ea576ac83,
-    type: 3}
-  m_PrefabInstance: {fileID: 8214515166344442171}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &1980237365260661757 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7675511870447796934, guid: fed549c4e142e5a40b75743ea576ac83,
