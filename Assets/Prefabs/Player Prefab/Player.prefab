@@ -39004,7 +39004,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1369aaf0886b7de44b2508580800c99c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioFootstep: {fileID: 8300000, guid: 11932286f9f1adb4685cc13e44d4b0af, type: 3}
+  audioFootstep: {fileID: 8300000, guid: b52ec58416347e045bea50b27913abf2, type: 3}
 --- !u!1 &6674484034787924927
 GameObject:
   m_ObjectHideFlags: 0

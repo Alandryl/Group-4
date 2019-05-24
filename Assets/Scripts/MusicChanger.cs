@@ -8,6 +8,7 @@ public class MusicChanger : MonoBehaviour
     MusicPlayer musicPlayer;
 
     public AudioClip musicToPlay;
+    public AudioClip ambienceToPlay;
 
     void Start()
     {
@@ -22,10 +23,16 @@ public class MusicChanger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player" && musicPlayer.currentTrack != musicToPlay)
+        if (other.gameObject.tag == "Player" && musicPlayer.currentMusic != musicToPlay)
         {
-            musicPlayer.currentTrack = musicToPlay;
-            StartCoroutine(musicPlayer.ChangeTrack());
+            musicPlayer.currentMusic = musicToPlay;
+            StartCoroutine(musicPlayer.ChangeMusic());
+        }
+
+        if (other.gameObject.tag == "Player" && musicPlayer.currentAmbience != ambienceToPlay)
+        {
+            musicPlayer.currentAmbience = ambienceToPlay;
+            StartCoroutine(musicPlayer.ChangeAmbience());
         }
     }
 
