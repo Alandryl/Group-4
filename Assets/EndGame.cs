@@ -5,6 +5,7 @@ using UnityEngine;
 public class EndGame : MonoBehaviour
 {
     public GameManager gameManager;
+    public bool canEndGame;
 
     void Start()
     {
@@ -19,7 +20,7 @@ public class EndGame : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player" && canEndGame)
         {
             gameManager.EndGame();
         }
