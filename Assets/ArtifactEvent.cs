@@ -58,10 +58,13 @@ public class ArtifactEvent : MonoBehaviour
 
     public void Activation()
     {
-        player.GetComponent<PlayerMovement>().movementEnabled = false;
-        player.GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
-        StartCoroutine(Activate());
-        activated = true;
+        if (!activated)
+        {
+            player.GetComponent<PlayerMovement>().movementEnabled = false;
+            player.GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
+            StartCoroutine(Activate());
+            activated = true;
+        }
     }
 
     IEnumerator Activate()
