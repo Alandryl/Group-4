@@ -54,7 +54,7 @@ public class PlayerMovement : MonoBehaviour
     float dashCounter;
     public float dashCooldown = 3f;
     float dashCountdown;
-    public bool dashReady;
+    public bool dashReady = true;
     public bool isDashing;
 
     [Header("Audio")]
