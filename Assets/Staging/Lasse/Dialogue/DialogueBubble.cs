@@ -72,10 +72,9 @@ public class DialogueBubble : MonoBehaviour
 
     void Update()
     {
-        transform.localScale = new Vector3(-Camera.main.transform.position.z * 0.1f, -Camera.main.transform.position.z * 0.1f, -Camera.main.transform.position.z * 0.1f);
-        transform.position = new Vector3(player.transform.position.x, player.transform.position.y + 2f - Camera.main.transform.position.z * 0.1f, player.transform.position.z);
-        //gets "submit" input, unlocks bool lock if zero or below
-        float submitInput = Input.GetAxis("Submit");
+        
+            //gets "submit" input, unlocks bool lock if zero or below
+            float submitInput = Input.GetAxis("Submit");
 
             if (submitInput <= 0)
             {
@@ -124,14 +123,11 @@ public class DialogueBubble : MonoBehaviour
                     if (continueBubble != null)
                     {
                         continueBubble.SetActive(true);
-                        continueBubble.transform.localScale = new Vector3(-Camera.main.transform.position.z * 0.1f, -Camera.main.transform.position.z * 0.1f, -Camera.main.transform.position.z * 0.1f);
                     }
-                    else
+                    else if (Continue != null)
                     {
-                        if (Continue != null)
-                            {
-                                Continue();
-                            }
+                        
+                            Continue();
                         
                     }
                     InteractTestScript interactObject = gameObject.GetComponentInParent<InteractTestScript>();

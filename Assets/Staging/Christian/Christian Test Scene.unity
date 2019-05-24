@@ -1882,7 +1882,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicPlayerObject: {fileID: 0}
   musicToPlay: {fileID: 8300000, guid: 397fb1aa81d4da9488b557f13d9cfdaa, type: 3}
-  ambienceToPlay: {fileID: 8300000, guid: f8d385c137392e24e84c7378ab5b1bc6, type: 3}
 --- !u!65 &101184858
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6219,7 +6218,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &327197027
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16189,7 +16188,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicPlayerObject: {fileID: 0}
   musicToPlay: {fileID: 8300000, guid: da6dbea2967f52d4e893e224112684b0, type: 3}
-  ambienceToPlay: {fileID: 8300000, guid: 484285f613174f44c8ab7cd84f8003bc, type: 3}
 --- !u!65 &905092216
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -39597,11 +39595,6 @@ PrefabInstance:
       propertyPath: dashCooldown
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 3663161269612296808, guid: dfd9b55bd3e300e45bbbfc71ed4dc65b,
-        type: 3}
-      propertyPath: audioHardLanding
-      value: 
-      objectReference: {fileID: 8300000, guid: d75c97a69873a2e438cf19e26c394fbf, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dfd9b55bd3e300e45bbbfc71ed4dc65b, type: 3}
 --- !u!1001 &3697991798014558642
