@@ -1749,7 +1749,7 @@ Transform:
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3417911769832630361}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &8811163523251840545
 BoxCollider:
@@ -2056,7 +2056,7 @@ MeshRenderer:
   m_Materials:
   - {fileID: 2100000, guid: b5346aec344570d46ba88f8748e6c76f, type: 2}
   - {fileID: 2100000, guid: 938a417857ffe084fb9ccc8281237359, type: 2}
-  - {fileID: 2100000, guid: a24578f3bcae69c41b821c05c5a1fb6d, type: 2}
+  - {fileID: 2100000, guid: 322f18b21f3908e4a96cb0e12a79fccd, type: 2}
   - {fileID: 2100000, guid: 9a8e6eb605e42414c8c34688d33b548e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -2479,7 +2479,7 @@ GameObject:
   - component: {fileID: 3417911768620228171}
   - component: {fileID: 3417911768620228168}
   m_Layer: 9
-  m_Name: Plane
+  m_Name: Light cutter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2558,97 +2558,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &3417911769347839877
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3417911769347839876}
-  - component: {fileID: 3417911769347839879}
-  m_Layer: 9
-  m_Name: Point Light (16)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
---- !u!4 &3417911769347839876
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3417911769347839877}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 19.14, y: 4.455, z: -8.337}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 3417911769832630361}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!108 &3417911769347839879
-Light:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3417911769347839877}
-  m_Enabled: 1
-  serializedVersion: 9
-  m_Type: 2
-  m_Color: {r: 0.7764706, g: 0.91877913, b: 1, a: 1}
-  m_Intensity: 3
-  m_Range: 4
-  m_SpotAngle: 30
-  m_InnerSpotAngle: 21.80208
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 1
-    m_Resolution: -1
-    m_CustomResolution: -1
-    m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
-    m_CullingMatrixOverride:
-      e00: 1
-      e01: 0
-      e02: 0
-      e03: 0
-      e10: 0
-      e11: 1
-      e12: 0
-      e13: 0
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    m_UseCullingMatrixOverride: 0
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingLayerMask: 1
-  m_Lightmapping: 4
-  m_LightShadowCasterMode: 0
-  m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
-  m_UseBoundingSphereOverride: 0
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
 --- !u!1 &3417911769832630342
 GameObject:
   m_ObjectHideFlags: 0
@@ -2679,7 +2588,6 @@ Transform:
   - {fileID: 6505637072341428925}
   - {fileID: 6505637072128378459}
   - {fileID: 3417911768620228173}
-  - {fileID: 3417911769347839876}
   - {fileID: 6830652712953370061}
   m_Father: {fileID: 7643849280061576590}
   m_RootOrder: 78
@@ -12143,12 +12051,12 @@ PrefabInstance:
     - target: {fileID: 8441565220803794491, guid: 2abeaf99bb4d11440babd5de651a0b4c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.139
+      value: 5.135
       objectReference: {fileID: 0}
     - target: {fileID: 8441565220803794491, guid: 2abeaf99bb4d11440babd5de651a0b4c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.182
+      value: 3.07
       objectReference: {fileID: 0}
     - target: {fileID: 8441565220803794491, guid: 2abeaf99bb4d11440babd5de651a0b4c,
         type: 3}
