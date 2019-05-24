@@ -46,11 +46,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSourceMusic: {fileID: 3629771917345255165}
-  currentMusic: {fileID: 8300000, guid: da6dbea2967f52d4e893e224112684b0, type: 3}
+  currentMusic: {fileID: 0}
   audioVolumeMusic: 0.5
   fadeMusic: 0
   audioSourceAmbience: {fileID: 5365433111397868767}
-  currentAmbience: {fileID: 8300000, guid: 484285f613174f44c8ab7cd84f8003bc, type: 3}
+  currentAmbience: {fileID: 8300000, guid: 0dec3fb4add192742894a7d0f61413fe, type: 3}
   audioVolumeAmbience: 0.75
   fadeAmbience: 0
 --- !u!1 &2958341362099736658
