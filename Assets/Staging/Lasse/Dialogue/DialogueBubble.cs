@@ -120,20 +120,24 @@ public class DialogueBubble : MonoBehaviour
             {
                 if (!hasAnswers)
                 {
-                    if (continueBubble != null) { continueBubble.SetActive(true); }
-
-
+                    if (continueBubble != null)
+                    {
+                        continueBubble.SetActive(true);
+                    }
+                    else if (Continue != null)
+                    {
+                        
+                            Continue();
+                        
+                    }
                     InteractTestScript interactObject = gameObject.GetComponentInParent<InteractTestScript>();
+
                     if (interactObject != null)
                     {
                         interactObject.bubbleObject = continueBubble;
-                    }
-                    
+                    } 
 
-                    if (Continue != null)
-                    {
-                        Continue();
-                    }
+                    
                     
                     hasZeroed = false;
                     gameObject.SetActive(false);
