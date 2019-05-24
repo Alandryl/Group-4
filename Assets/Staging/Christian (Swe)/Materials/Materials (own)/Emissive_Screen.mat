@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Emissive_Lamp
+  m_Name: Emissive_Screen
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: _EMISSION
   m_LightmapFlags: 1
@@ -61,7 +61,7 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _GlossMapScale: 1
-    - _Glossiness: 0.5
+    - _Glossiness: 0.7
     - _GlossyReflections: 1
     - _Metallic: 0
     - _Mode: 0
@@ -73,5 +73,5 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.8867924, g: 0.7255084, b: 0.497775, a: 1}
-    - _EmissionColor: {r: 0.7830189, g: 0.666551, b: 0.4986205, a: 1}
+    - _Color: {r: 0.8915094, g: 0.99785167, b: 1, a: 1}
+    - _EmissionColor: {r: 0.28235295, g: 0.3647059, b: 0.37254903, a: 1}
