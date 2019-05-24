@@ -145,7 +145,7 @@ MonoBehaviour:
     m_To: OutDoors_Camera_Vista_Static
     m_Blend:
       m_Style: 3
-      m_Time: 8
+      m_Time: 4
       m_CustomCurve:
         serializedVersion: 2
         m_Curve:
@@ -208,6 +208,28 @@ MonoBehaviour:
     m_Blend:
       m_Style: 6
       m_Time: 4
+      m_CustomCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 0
+        m_PostInfinity: 0
+        m_RotationOrder: 0
+  - m_From: OutDoors_Camera_Hide_Under_Ground
+    m_To: Zoom_In_Lab_Camera
+    m_Blend:
+      m_Style: 6
+      m_Time: 0.8
+      m_CustomCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 0
+        m_PostInfinity: 0
+        m_RotationOrder: 0
+  - m_From: Zoom_Out_Lab_Camera
+    m_To: OutDoors_Camera_Hide_Under_Ground
+    m_Blend:
+      m_Style: 6
+      m_Time: 0.8
       m_CustomCurve:
         serializedVersion: 2
         m_Curve: []

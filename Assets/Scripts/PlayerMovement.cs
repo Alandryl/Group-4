@@ -39,9 +39,12 @@ public class PlayerMovement : MonoBehaviour
     public float hardLanding = 1f;
     public float deathFallTime = 3f;
 
+    [Header("Unlocked Abilities")]
+    public bool doubleJumpUnlocked;
+    public bool dashJumpUnlocked;
+
     [Header("Double Jump")]
 
-    public bool doubleJumpUnlocked;
     public bool canDoubleJump;
 
     [Header("Dash")]
@@ -135,7 +138,7 @@ public class PlayerMovement : MonoBehaviour
         {
             dashReady = true;
         }
-        if (Input.GetButtonDown("Ability1") && grounded == false && dashReady && movementEnabled)
+        if (Input.GetButtonDown("Ability1") && grounded == false && dashReady && dashJumpUnlocked && movementEnabled)
         {
             Dash();
         }

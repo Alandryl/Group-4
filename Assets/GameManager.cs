@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public GameObject player;
     public GameObject currentCheckpoint;
     GameObject BlackScreenFadeObject;
+    public string mainMenuScene;
 
     void Start()
     {
@@ -24,6 +26,11 @@ public class GameManager : MonoBehaviour
         StartCoroutine (Respawn());
     }
 
+    public void EndGame()
+    {
+        StartCoroutine(EndGameCoroutine());
+    }
+
     IEnumerator Respawn()
     {
         yield return new WaitForSeconds(2);
@@ -36,5 +43,13 @@ public class GameManager : MonoBehaviour
         BlackScreenFadeObject.GetComponent<Animator>().SetTrigger("Fade");
         yield return new WaitForSeconds(1);
         player.GetComponent<PlayerMovement>().movementEnabled = true;
+    }
+
+
+    IEnumerator EndGameCoroutine()
+    {
+        BlackScreenFadeObject.GetComponent<Animator>().SetTrigger("Fade");
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene(mainMenuScene);
     }
 }
