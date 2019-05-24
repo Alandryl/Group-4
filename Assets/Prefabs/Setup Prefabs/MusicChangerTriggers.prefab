@@ -118,7 +118,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   musicPlayerObject: {fileID: 0}
-  musicToPlay: {fileID: 8300000, guid: da6dbea2967f52d4e893e224112684b0, type: 3}
+  musicToPlay: {fileID: 0}
   ambienceToPlay: {fileID: 8300000, guid: 484285f613174f44c8ab7cd84f8003bc, type: 3}
 --- !u!1 &1393767117
 GameObject:
@@ -178,7 +178,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   musicPlayerObject: {fileID: 0}
-  musicToPlay: {fileID: 8300000, guid: da6dbea2967f52d4e893e224112684b0, type: 3}
+  musicToPlay: {fileID: 0}
   ambienceToPlay: {fileID: 8300000, guid: 484285f613174f44c8ab7cd84f8003bc, type: 3}
 --- !u!1 &1583263620
 GameObject:
