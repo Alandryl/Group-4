@@ -53,9 +53,9 @@ public class PlayerMovement : MonoBehaviour
     public float dashTime = 0.25f;
     float dashCounter;
     public float dashCooldown = 3f;
-    float dashCountdown;
+    float dashCooldownCountdown;
     public bool dashReady = true;
-    public bool isDashing;
+    public bool isDashing = false;
 
     [Header("Audio")]
     public AudioClip audioFootstep;
@@ -138,7 +138,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetButtonDown("Ability1") && grounded == false && dashReady && dashJumpUnlocked && movementEnabled)
         {
-            dashCountdown = dashCooldown;
+            dashCooldownCountdown = dashCooldown;
             Dash();
         }
 
@@ -160,11 +160,11 @@ public class PlayerMovement : MonoBehaviour
             ac.SetBool("Dashing", false);
         }
 
-        if (dashCountdown > 0f)
+        if (dashCooldownCountdown > 0f)
         {
-            dashCountdown -= Time.deltaTime;
+            dashCooldownCountdown -= Time.deltaTime;
         }
-        if (dashCountdown <= 0f && !dashReady)
+        if (dashCooldownCountdown <= 0f && !dashReady)
         {
             dashReady = true;
             audioSource.PlayOneShot(audioDashReady);

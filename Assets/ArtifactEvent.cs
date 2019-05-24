@@ -15,6 +15,7 @@ public class ArtifactEvent : MonoBehaviour
     public GameObject BlackScreenFadeObject;
     public GameObject particleEffects;
     public GameObject lightObject;
+    public GameObject endGameObject;
 
 
 
@@ -25,6 +26,7 @@ public class ArtifactEvent : MonoBehaviour
     void Start()
     {
         player = GameObject.Find("Player");
+        endGameObject = GameObject.Find("EndGame");
 
         audioSource = GetComponent<AudioSource>();
         particleEffects.SetActive(false);
@@ -88,5 +90,6 @@ public class ArtifactEvent : MonoBehaviour
         player.GetComponent<PlayerMovement>().movementEnabled = true;
         player.GetComponent<PlayerMovement>().doubleJumpUnlocked = true;
         player.GetComponent<PlayerMovement>().dashJumpUnlocked = true;
+        endGameObject.GetComponent<EndGame>().canEndGame = true;
     }
 }
