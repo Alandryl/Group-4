@@ -64,6 +64,7 @@ public class PlayerMovement : MonoBehaviour
     public AudioClip audioDash;
     public AudioClip audioDashReady;
     public AudioClip audioLanding;
+    public AudioClip audioHardLanding;
 
     [Header("Effects")]
     public GameObject doubleJumpEffect;
@@ -218,7 +219,7 @@ public class PlayerMovement : MonoBehaviour
                 if (airTime >= hardLanding && airTime < deathFallTime)
                 {
                     hardLandingEffect.GetComponent<ParticleSystem>().Play();
-                    audioSource.PlayOneShot(audioLanding);
+                    audioSource.PlayOneShot(audioHardLanding);
                     ac.SetTrigger("landing");
                     rb.velocity = Vector3.zero;
                     StartCoroutine(HardLanding());
