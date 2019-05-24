@@ -52,21 +52,23 @@ public class PlayerMovement : MonoBehaviour
     public float dashSpeed = 15;
     public float dashTime = 0.25f;
     float dashCounter;
-    bool dashReady;
+    public float dashCooldown = 3f;
+    float dashCountdown;
+    public bool dashReady;
     public bool isDashing;
-
-
 
     [Header("Audio")]
     public AudioClip audioFootstep;
     public AudioClip audioJump;
     public AudioClip audioDoubleJump;
     public AudioClip audioDash;
+    public AudioClip audioDashReady;
     public AudioClip audioLanding;
 
     [Header("Effects")]
     public GameObject doubleJumpEffect;
     public GameObject dashEffect;
+    public GameObject dashReadyEffect;
     public GameObject landingEffect;
     public GameObject hardLandingEffect;
 
@@ -134,12 +136,9 @@ public class PlayerMovement : MonoBehaviour
 
         //Dash
 
-        if (grounded)
-        {
-            dashReady = true;
-        }
         if (Input.GetButtonDown("Ability1") && grounded == false && dashReady && dashJumpUnlocked && movementEnabled)
         {
+            dashCountdown = dashCooldown;
             Dash();
         }
 
@@ -161,16 +160,16 @@ public class PlayerMovement : MonoBehaviour
             ac.SetBool("Dashing", false);
         }
 
-        /*
-        if (isDashing)
+        if (dashCountdown > 0f)
         {
-            ac.SetBool("isDashing", true);
+            dashCountdown -= Time.deltaTime;
         }
-        else
+        if (dashCountdown <= 0f && !dashReady)
         {
-            ac.SetBool("isDashing", false);
+            dashReady = true;
+            audioSource.PlayOneShot(audioDashReady);
+            dashReadyEffect.GetComponent<ParticleSystem>().Play();
         }
-        */
 
         //Flip
 
