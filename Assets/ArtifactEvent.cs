@@ -70,5 +70,6 @@ public class ArtifactEvent : MonoBehaviour
         yield return new WaitForSeconds(1);
         player.GetComponent<PlayerMovement>().movementEnabled = true;
         player.GetComponent<PlayerMovement>().doubleJumpUnlocked = true;
+        player.GetComponent<PlayerMovement>().dashJumpUnlocked = true;
     }
 }
