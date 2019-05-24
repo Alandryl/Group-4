@@ -39545,13 +39545,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3663161269612296808, guid: dfd9b55bd3e300e45bbbfc71ed4dc65b,
         type: 3}
-      propertyPath: dashJumpUnlocked
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3663161269612296808, guid: dfd9b55bd3e300e45bbbfc71ed4dc65b,
-        type: 3}
-      propertyPath: doubleJumpUnlocked
-      value: 0
+      propertyPath: dashCooldown
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dfd9b55bd3e300e45bbbfc71ed4dc65b, type: 3}
