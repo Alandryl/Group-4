@@ -21,6 +21,8 @@ public class InteractTestScript : MonoBehaviour
         if (other.tag == "Player")
         {
             player = other.gameObject;
+            objectsToEnable[0].transform.position = new Vector3(other.transform.position.x, other.transform.position.y + 2f - Camera.main.transform.position.z * 0.1f, other.transform.position.z);
+            objectsToEnable[0].transform.localScale = new Vector3(-Camera.main.transform.position.z * 0.1f, -Camera.main.transform.position.z * 0.1f, -Camera.main.transform.position.z * 0.1f);
         }
         if (other.tag == "Player" && !hasSubmitted )
         {
@@ -29,6 +31,7 @@ public class InteractTestScript : MonoBehaviour
                 if (xIndicator != null)
                 {
                     xIndicator.SetActive(true);
+                    xIndicator.transform.position = new Vector3(transform.position.x,transform.position.y + 2f,transform.position.z);
                 }
             }
             else
