@@ -33,7 +33,7 @@
         }
     },
     "texturesets": {
-        "Material.001": {
+        "Material.002": {
             "shader": "Main shader"
         }
     }
