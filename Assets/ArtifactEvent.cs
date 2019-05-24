@@ -24,6 +24,8 @@ public class ArtifactEvent : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        player = GameObject.Find("Player");
+
         audioSource = GetComponent<AudioSource>();
         particleEffects.SetActive(false);
 
@@ -40,6 +42,7 @@ public class ArtifactEvent : MonoBehaviour
         }
     }
 
+    /*
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player" && !activated)
@@ -51,9 +54,20 @@ public class ArtifactEvent : MonoBehaviour
             activated = true;
         }
     }
+    */
+
+    public void Activation()
+    {
+        player.GetComponent<PlayerMovement>().movementEnabled = false;
+        player.GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
+        StartCoroutine(Activate());
+        activated = true;
+    }
 
     IEnumerator Activate()
     {
+        yield return new WaitForSeconds(0.1f);
+        player.GetComponent<PlayerMovement>().movementEnabled = false;
         audioSource.PlayOneShot(audioTension);
         musicPlayer.fadeMusic = true;
         particleEffects.SetActive(true);
