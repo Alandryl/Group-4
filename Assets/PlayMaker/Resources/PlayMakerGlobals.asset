@@ -37,3 +37,5 @@ MonoBehaviour:
   - Way_Back_Events
   - Play_Sound_FX
   - Play_Audio_FX
+  - Play_Spray
+  - Stop_Spray
