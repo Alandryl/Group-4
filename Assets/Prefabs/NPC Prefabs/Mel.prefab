@@ -43,21 +43,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mel
       objectReference: {fileID: 0}
-    - target: {fileID: -8655738984240780542, guid: fdb4106fae28115469ca2eb483cb1920,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -7150759012435423545, guid: fdb4106fae28115469ca2eb483cb1920,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -6057140222963153312, guid: fdb4106fae28115469ca2eb483cb1920,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: e621b23790443f249972e823bdda004e, type: 2}
     - target: {fileID: -4216859302048453862, guid: fdb4106fae28115469ca2eb483cb1920,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -76,17 +61,17 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: fdb4106fae28115469ca2eb483cb1920,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: fdb4106fae28115469ca2eb483cb1920,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: fdb4106fae28115469ca2eb483cb1920,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: fdb4106fae28115469ca2eb483cb1920,
         type: 3}
@@ -106,7 +91,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: fdb4106fae28115469ca2eb483cb1920,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -221.377
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: fdb4106fae28115469ca2eb483cb1920,
         type: 3}
@@ -128,21 +113,36 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -6057140222963153312, guid: fdb4106fae28115469ca2eb483cb1920,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: e621b23790443f249972e823bdda004e, type: 2}
+    - target: {fileID: -8655738984240780542, guid: fdb4106fae28115469ca2eb483cb1920,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7150759012435423545, guid: fdb4106fae28115469ca2eb483cb1920,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -1461287556891431035, guid: fdb4106fae28115469ca2eb483cb1920,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 65355ce6ae724c0419cbc59a861296f8, type: 2}
+    - target: {fileID: -1461287556891431035, guid: fdb4106fae28115469ca2eb483cb1920,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: bed752f43a0b50e46bb1dad1af459812, type: 2}
     - target: {fileID: -4012383296075296566, guid: fdb4106fae28115469ca2eb483cb1920,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 9b3be4cf811068b4dae4b73070a6275e, type: 2}
-    - target: {fileID: -1461287556891431035, guid: fdb4106fae28115469ca2eb483cb1920,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: bca5d2534a970664da981e7fd7f6fecb, type: 2}
-    - target: {fileID: -1461287556891431035, guid: fdb4106fae28115469ca2eb483cb1920,
-        type: 3}
-      propertyPath: m_Materials.Array.data[1]
-      value: 
-      objectReference: {fileID: 2100000, guid: d0d5bab7743691647bf0697b155bf4b1, type: 2}
     - target: {fileID: 900765399398613825, guid: fdb4106fae28115469ca2eb483cb1920,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
