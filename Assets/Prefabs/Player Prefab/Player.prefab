@@ -29151,15 +29151,16 @@ MonoBehaviour:
   canDoubleJump: 0
   dashSpeed: 30
   dashTime: 0.15
-  dashCooldown: 2
+  dashCooldown: 3
   dashReady: 0
   isDashing: 0
   audioFootstep: {fileID: 8300000, guid: 47401e4597d03124f9e2e4925d0d11df, type: 3}
   audioJump: {fileID: 8300000, guid: 11932286f9f1adb4685cc13e44d4b0af, type: 3}
   audioDoubleJump: {fileID: 8300000, guid: 602334d1a782a6b46bb8a71ce6b5240b, type: 3}
   audioDash: {fileID: 8300000, guid: 2df721ed7e79a4e4fa972d1a2873da44, type: 3}
-  audioDashReady: {fileID: 8300000, guid: 9072ed02cd825724197775475eb5405d, type: 3}
+  audioDashReady: {fileID: 8300000, guid: 5f10001817fb7684f90301a3b38b5108, type: 3}
   audioLanding: {fileID: 8300000, guid: e40f12fba98849f43a7f4f92a8c33bdc, type: 3}
+  audioHardLanding: {fileID: 8300000, guid: d75c97a69873a2e438cf19e26c394fbf, type: 3}
   doubleJumpEffect: {fileID: 2961206766198176500}
   dashEffect: {fileID: 6326170602055316216}
   dashReadyEffect: {fileID: 8269700310608330775}
@@ -53662,16 +53663,16 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 2100000, guid: 73d43e53f047a7445b649d3db59ad046, type: 2}
-    - target: {fileID: -4012383296075296566, guid: fdb4106fae28115469ca2eb483cb1920,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 9b3be4cf811068b4dae4b73070a6275e, type: 2}
     - target: {fileID: 900765399398613825, guid: fdb4106fae28115469ca2eb483cb1920,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: f82e5b68b89b30b4a9554d5c59199dd9, type: 2}
+    - target: {fileID: -4012383296075296566, guid: fdb4106fae28115469ca2eb483cb1920,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9b3be4cf811068b4dae4b73070a6275e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb4106fae28115469ca2eb483cb1920, type: 3}
 --- !u!1 &6450904650301010008 stripped

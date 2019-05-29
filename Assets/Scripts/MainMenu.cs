@@ -9,15 +9,32 @@ public class MainMenu : MonoBehaviour
     public GameObject BlackScreenFadeObject;
 
     bool disableSelection;
+    bool pressAnyButton;
+
+    [Header("Objects")]
+
+    public GameObject cameraObject;
+    public GameObject musicPlayer;
+    public GameObject logo;
+    public GameObject pressAnyButtonText;
+
+    [Header("Screens")]
+
+    public GameObject mainScreen;
+
 
     void Start()
     {
-        
+        StartCoroutine(StartUp());
     }
 
     void Update()
     {
-        
+        if (Input.anyKey && !pressAnyButton && !disableSelection)
+        {
+            pressAnyButton = true;
+            StartCoroutine(EnterMainScreen());
+        }
     }
 
     public void PlayGame ()
@@ -36,9 +53,33 @@ public class MainMenu : MonoBehaviour
         }
     }
 
+    IEnumerator StartUp()
+    {
+        disableSelection = true;
+        yield return new WaitForSeconds(1);
+        disableSelection = false;
+    }
+
+    IEnumerator EnterMainScreen()
+    {
+        disableSelection = true;
+        logo.GetComponent<Animator>().SetTrigger("shrink");
+        pressAnyButtonText.GetComponent<Animator>().SetTrigger("Fade");
+        cameraObject.GetComponent<Animator>().SetTrigger("zoomIn");
+        yield return new WaitForSeconds(1);
+        mainScreen.SetActive(true);
+        disableSelection = false;
+    }
+
     IEnumerator StartingGame()
     {
         disableSelection = true;
+
+        musicPlayer.GetComponent<MusicPlayer>().currentMusic = null;
+        musicPlayer.GetComponent<MusicPlayer>().currentAmbience = null;
+        musicPlayer.GetComponent<MusicPlayer>().fadeMusic = true;
+        musicPlayer.GetComponent<MusicPlayer>().fadeAmbience = true;
+
         BlackScreenFadeObject.GetComponent<Animator>().SetTrigger("Fade");
         yield return new WaitForSeconds(1);
         SceneManager.LoadScene(playScene);
