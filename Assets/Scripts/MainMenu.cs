@@ -25,6 +25,7 @@ public class MainMenu : MonoBehaviour
 
     void Start()
     {
+        mainScreen.SetActive(false);
         StartCoroutine(StartUp());
     }
 
