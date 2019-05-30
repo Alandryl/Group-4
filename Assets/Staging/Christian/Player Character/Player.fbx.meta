@@ -95,7 +95,7 @@ ModelImporter:
       takeName: Take 001
       internalID: 4272298700473792222
       firstFrame: 242
-      lastFrame: 272
+      lastFrame: 302
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -137,8 +137,8 @@ ModelImporter:
       name: Player_Run
       takeName: Take 001
       internalID: 6599214315619726264
-      firstFrame: 273
-      lastFrame: 303
+      firstFrame: 303
+      lastFrame: 363
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -180,8 +180,8 @@ ModelImporter:
       name: Player_Ascending
       takeName: Take 001
       internalID: 3525040349235712277
-      firstFrame: 304
-      lastFrame: 364
+      firstFrame: 364
+      lastFrame: 424
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -209,8 +209,8 @@ ModelImporter:
       name: Player_Falling
       takeName: Take 001
       internalID: -998496362607748373
-      firstFrame: 365
-      lastFrame: 425
+      firstFrame: 425
+      lastFrame: 485
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -238,15 +238,15 @@ ModelImporter:
       name: Player_Dash
       takeName: Take 001
       internalID: 493691367032776654
-      firstFrame: 426
-      lastFrame: 486
+      firstFrame: 486
+      lastFrame: 546
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -267,8 +267,8 @@ ModelImporter:
       name: Player_DoubleJump
       takeName: Take 001
       internalID: 3060872287085348379
-      firstFrame: 487
-      lastFrame: 547
+      firstFrame: 547
+      lastFrame: 607
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -296,8 +296,8 @@ ModelImporter:
       name: Player_LyingDown
       takeName: Take 001
       internalID: -5689449298548171765
-      firstFrame: 549
-      lastFrame: 608
+      firstFrame: 609
+      lastFrame: 667
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -325,8 +325,8 @@ ModelImporter:
       name: Player_LyingDownRise
       takeName: Take 001
       internalID: -8997366251460796185
-      firstFrame: 609
-      lastFrame: 669
+      firstFrame: 669
+      lastFrame: 729
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -354,8 +354,8 @@ ModelImporter:
       name: Player_Landing
       takeName: Take 001
       internalID: -3474037189487492304
-      firstFrame: 670
-      lastFrame: 730
+      firstFrame: 730
+      lastFrame: 790
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

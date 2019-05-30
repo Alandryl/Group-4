@@ -19,6 +19,7 @@ public class PlayerMovement : MonoBehaviour
     [Header("Movement")]
 
     public bool movementEnabled = true;
+    bool isMoving;
     public float runSpeed = 4;
     bool facingRight;
     public float jumpHeight = 500;
@@ -97,6 +98,15 @@ public class PlayerMovement : MonoBehaviour
            (!facingRight && !standingOnSlopeLeft && !isDashing && movementEnabled))
         {
             rb.velocity = new Vector3(move * runSpeed, rb.velocity.y, 0);
+
+            if (grounded)
+            {
+                isMoving = true;
+            }
+            else
+            {
+                isMoving = false;
+            }
         }
 
         if (movementEnabled)
@@ -270,7 +280,14 @@ public class PlayerMovement : MonoBehaviour
 
         //Animation Speed
 
-        ac.speed = runSpeed / 4;
+        if (isMoving)
+        {
+            ac.speed = runSpeed / 3;
+        }
+        else
+        {
+            ac.speed = 1;
+        }
 
 
         //Sliding
