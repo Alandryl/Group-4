@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour
 
     IEnumerator Respawn()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
         BlackScreenFadeObject.GetComponent<Animator>().SetTrigger("Fade");
         yield return new WaitForSeconds(1);
         player.GetComponent<Rigidbody>().velocity = Vector3.zero;
