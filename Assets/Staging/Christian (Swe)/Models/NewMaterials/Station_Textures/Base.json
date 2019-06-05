@@ -1,0 +1,217 @@
+{
+    "format": {
+        "version": "1.0"
+    },
+    "shaders": {
+        "Main shader": {
+            "parameters": {
+                "Common Parameters": {
+                    "ao_intensity": 0.75,
+                    "emissive_intensity": 1,
+                    "horizonFade": 1.2999999523162842,
+                    "nbSamples": 16
+                },
+                "Parallax Occlusion Mapping": {
+                    "maxPOMSamples": 16,
+                    "minPOMSamples": 4,
+                    "pomStrength": 1,
+                    "usePOM": false
+                },
+                "Subsurface Scattering Parameters": {
+                    "sssColor": [
+                        0.7009999752044678,
+                        0.3009999990463257,
+                        0.3050000071525574
+                    ],
+                    "sssEnabled": true,
+                    "sssScale": 0.5,
+                    "sssType": 1
+                }
+            },
+            "shader": "pbr-metal-rough",
+            "shaderInstance": "Main shader"
+        }
+    },
+    "texturesets": {
+        "BaseWalls_Bed": {
+            "shader": "Main shader"
+        },
+        "Base_Walls_Exterior": {
+            "shader": "Main shader"
+        },
+        "Base_Walls_Interior": {
+            "shader": "Main shader"
+        },
+        "Bent_Pipe_Interior": {
+            "shader": "Main shader"
+        },
+        "Book_Cover": {
+            "shader": "Main shader"
+        },
+        "Book_Paper": {
+            "shader": "Main shader"
+        },
+        "Communication_Tower": {
+            "shader": "Main shader"
+        },
+        "Crates": {
+            "shader": "Main shader"
+        },
+        "Cup": {
+            "shader": "Main shader"
+        },
+        "DefaultMaterial": {
+            "shader": "Main shader"
+        },
+        "Desk": {
+            "shader": "Main shader"
+        },
+        "Door_Frames": {
+            "shader": "Main shader"
+        },
+        "Doors": {
+            "shader": "Main shader"
+        },
+        "Emissive_Wall_Lamps_Walk_Way": {
+            "shader": "Main shader"
+        },
+        "FauxLaeather_Bed": {
+            "shader": "Main shader"
+        },
+        "FauxLeather_Sofs": {
+            "shader": "Main shader"
+        },
+        "Floor_Exteriror": {
+            "shader": "Main shader"
+        },
+        "Floor_Interior": {
+            "shader": "Main shader"
+        },
+        "Floor_Liner": {
+            "shader": "Main shader"
+        },
+        "Glass_Low_Growth_Vat": {
+            "shader": "Main shader"
+        },
+        "Glass_Watered_Vat": {
+            "shader": "Main shader"
+        },
+        "Glass_Windows": {
+            "shader": "Main shader"
+        },
+        "Handle_Bars": {
+            "shader": "Main shader"
+        },
+        "Lamp": {
+            "shader": "Main shader"
+        },
+        "Lamps_Back": {
+            "shader": "Main shader"
+        },
+        "Lockers": {
+            "shader": "Main shader"
+        },
+        "Low_Growth_Vat_Indoor_Dirt": {
+            "shader": "Main shader"
+        },
+        "Low_Growth_Vat_Metal": {
+            "shader": "Main shader"
+        },
+        "Low_Growth_Vat_Overall": {
+            "shader": "Main shader"
+        },
+        "Metal_Door_Floor": {
+            "shader": "Main shader"
+        },
+        "Metal_Shelf": {
+            "shader": "Main shader"
+        },
+        "Metal_Watered_Vat": {
+            "shader": "Main shader"
+        },
+        "Metalic_Entrance_Fan": {
+            "shader": "Main shader"
+        },
+        "Outdoor_Module": {
+            "shader": "Main shader"
+        },
+        "Overall_Watered_Vat": {
+            "shader": "Main shader"
+        },
+        "Pc_Plastic": {
+            "shader": "Main shader"
+        },
+        "Pc_Screen": {
+            "shader": "Main shader"
+        },
+        "Pipes_Wall_Straight": {
+            "shader": "Main shader"
+        },
+        "Roof_Exterior": {
+            "shader": "Main shader"
+        },
+        "Roof_Interior": {
+            "shader": "Main shader"
+        },
+        "Roof_Pipes": {
+            "shader": "Main shader"
+        },
+        "Rubber": {
+            "shader": "Main shader"
+        },
+        "Satalite_Dish": {
+            "shader": "Main shader"
+        },
+        "Screen_Watered_Vat": {
+            "shader": "Main shader"
+        },
+        "SnackMachine": {
+            "shader": "Main shader"
+        },
+        "SnackMachineButtons": {
+            "shader": "Main shader"
+        },
+        "Sofa_Metalic": {
+            "shader": "Main shader"
+        },
+        "Stairs_Exterior": {
+            "shader": "Main shader"
+        },
+        "Table": {
+            "shader": "Main shader"
+        },
+        "Terrarium_Glass": {
+            "shader": "Main shader"
+        },
+        "Terrarium_Overal": {
+            "shader": "Main shader"
+        },
+        "Terrarium_Screen": {
+            "shader": "Main shader"
+        },
+        "Terrium_Dirt": {
+            "shader": "Main shader"
+        },
+        "Terrium_Metalic": {
+            "shader": "Main shader"
+        },
+        "WalkWay_Lights": {
+            "shader": "Main shader"
+        },
+        "Wall_Moduels_Interior": {
+            "shader": "Main shader"
+        },
+        "Wall_Module_Small": {
+            "shader": "Main shader"
+        },
+        "Wayfinding_Sign_Light": {
+            "shader": "Main shader"
+        },
+        "Wayfinding_Sign_Overall": {
+            "shader": "Main shader"
+        },
+        "Work_Pad": {
+            "shader": "Main shader"
+        }
+    }
+}
