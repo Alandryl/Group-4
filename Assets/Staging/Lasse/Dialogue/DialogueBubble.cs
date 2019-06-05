@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class DialogueBubble : MonoBehaviour
 {
     private GameObject player;
+    public GameObject alternativeCharacter;
     private PlayerMovement playerMovement;
 
     public delegate void ButtonPress(); //delegate , i dont really understand it, but its basically something that calls a series of functions
@@ -15,6 +16,8 @@ public class DialogueBubble : MonoBehaviour
     public static event ButtonPress Continue;
 
     public Color textColor = Color.white;
+
+    public Font font;
 
     public string questionText; //input for question
 
@@ -48,7 +51,12 @@ public class DialogueBubble : MonoBehaviour
 
     void Start()
     {
-        player = GameObject.FindWithTag("Player");
+        if (alternativeCharacter == null)
+        {
+            player = GameObject.FindWithTag("Player");
+        }
+        else { player = alternativeCharacter; }
+        
         playerMovement = player.GetComponent<PlayerMovement>();
         //sets positions of arrow to the position the text objects in the y and z axis
         indicatorAPosition = new Vector3(indicator.transform.position.x, answerTextAObject.transform.position.y, answerTextAObject.transform.position.z);
@@ -57,10 +65,16 @@ public class DialogueBubble : MonoBehaviour
         //sets text of canvas objects to the input text of the "question", and the answers if applicable
         questionTextObject.text = questionText;
         questionTextObject.color = textColor;
+        if (font !=null)
+        {
+            questionTextObject.font = font;
+        }
         if (hasAnswers)
         {
             answerTextAObject.text = answerAText;
             answerTextBObject.text = answerBText;
+            answerTextAObject.font = font;
+            answerTextBObject.font = font;
         }
         else
         {
